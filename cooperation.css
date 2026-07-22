@@ -1,0 +1,62 @@
+.cooperation-page { background: var(--white); }
+
+.cooperation-hero {
+  position: relative;
+  min-height: 820px;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--navy);
+}
+
+.cooperation-hero-media,
+.cooperation-hero-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cooperation-hero-media { object-fit: cover; object-position: center 54%; filter: saturate(0.92) contrast(1.04); }
+.cooperation-hero-overlay { background: linear-gradient(90deg, rgba(3, 18, 29, 0.97) 0%, rgba(3, 18, 29, 0.82) 47%, rgba(3, 18, 29, 0.25) 78%), linear-gradient(0deg, rgba(3, 18, 29, 0.84), transparent 52%); }
+
+.cooperation-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  min-height: 820px;
+  padding: 195px 0 92px;
+}
+
+.cooperation-hero-copy { max-width: 930px; }
+.cooperation-hero-copy h1 { max-width: 900px; margin: 0; font-size: clamp(62px, 7.3vw, 112px); font-weight: 680; letter-spacing: -0.062em; line-height: 0.92; }
+.cooperation-hero-copy > p:not(.overline) { max-width: 760px; margin: 34px 0 0; color: rgba(255,255,255,0.7); font-size: 17px; line-height: 1.72; }
+
+.cooperation-partners { background: var(--paper-warm); }
+.cooperation-partners-layout { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(450px, 1.08fr); gap: 9vw; align-items: start; }
+.cooperation-partners h2 { max-width: 760px; margin: 0; font-size: clamp(44px, 4.7vw, 70px); letter-spacing: -0.055em; line-height: 1.02; }
+.cooperation-partners h2 + p { max-width: 670px; margin: 27px 0 0; color: var(--muted); }
+.cooperation-partner-list { display: grid; border-top: 1px solid var(--line); }
+.cooperation-partner-list span { display: grid; grid-template-columns: 32px 1fr; gap: 18px; align-items: center; min-height: 76px; color: #33424f; font-size: 15px; border-bottom: 1px solid var(--line); }
+.cooperation-partner-list span::before { color: var(--gold); content: "◆"; font-size: 8px; }
+
+.cooperation-page .contact { scroll-margin-top: var(--header-total); }
+
+@media (max-width: 940px) {
+  .cooperation-hero { min-height: 780px; }
+  .cooperation-hero-inner { display: flex; min-height: 780px; padding: 180px 0 72px; flex-direction: column; align-items: stretch; justify-content: flex-end; }
+  .cooperation-partners-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .cooperation-hero { min-height: 820px; }
+  .cooperation-hero-media { object-position: 62% center; }
+  .cooperation-hero-overlay { background: linear-gradient(90deg, rgba(3,18,29,0.95), rgba(3,18,29,0.5)), linear-gradient(0deg, rgba(3,18,29,0.96), transparent 68%); }
+  .cooperation-hero-inner { min-height: 820px; padding: 145px 0 54px; }
+  .cooperation-hero-copy h1 { font-size: clamp(50px, 15vw, 67px); }
+  .cooperation-hero-copy > p:not(.overline) { margin-top: 25px; font-size: 14px; }
+  .cooperation-partners h2 { font-size: 40px; }
+  .cooperation-partners-layout { gap: 46px; }
+  .cooperation-partner-list span { min-height: 70px; font-size: 13px; }
+}
