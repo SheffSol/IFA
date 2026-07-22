@@ -1695,7 +1695,7 @@ a {
 
 .ida-showcase {
   position: relative;
-  padding: 92px 0;
+  padding: 62px 0;
   overflow: hidden;
   background: linear-gradient(135deg, #e7eef1 0%, #f3f0e8 52%, #edf2f4 100%);
 }
@@ -1716,7 +1716,7 @@ a {
 .ida-showcase-shell {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(340px, 0.78fr) minmax(0, 1.42fr);
+  grid-template-columns: minmax(300px, 0.68fr) minmax(0, 1.52fr);
   overflow: hidden;
   border: 1px solid rgba(7, 26, 45, 0.12);
   border-radius: 18px;
@@ -1728,7 +1728,7 @@ a {
   position: relative;
   display: flex;
   min-width: 0;
-  padding: 52px 46px 48px;
+  padding: 36px 34px 34px;
   flex-direction: column;
   align-items: flex-start;
   border-right: 1px solid rgba(7, 26, 45, 0.1);
@@ -1748,13 +1748,13 @@ a {
   border-radius: 50%;
 }
 
-.ida-showcase-brand .overline { margin-bottom: 34px; }
+.ida-showcase-brand .overline { margin-bottom: 22px; }
 
 .ida-showcase-logo {
   position: relative;
   display: grid;
-  width: 238px;
-  height: 238px;
+  width: 178px;
+  height: 178px;
   place-items: center;
   isolation: isolate;
 }
@@ -1762,7 +1762,7 @@ a {
 .ida-showcase-logo::before {
   position: absolute;
   z-index: -1;
-  inset: 13px;
+  inset: 10px;
   content: "";
   border: 1px solid rgba(184, 148, 78, 0.32);
   border-radius: 50%;
@@ -1771,16 +1771,16 @@ a {
 }
 
 .ida-showcase-logo img {
-  width: 222px;
-  height: 226px;
+  width: 166px;
+  height: 170px;
   object-fit: contain;
   filter: contrast(1.04);
 }
 
 .ida-showcase-badge {
   display: inline-flex;
-  margin-top: 32px;
-  padding: 9px 12px;
+  margin-top: 22px;
+  padding: 8px 11px;
   color: #76591f;
   font-size: 8px;
   font-weight: 850;
@@ -1793,18 +1793,18 @@ a {
 
 .ida-showcase-brand h2 {
   max-width: 430px;
-  margin: 24px 0 0;
+  margin: 18px 0 0;
   color: var(--navy);
-  font-size: clamp(38px, 3.5vw, 52px);
+  font-size: clamp(32px, 2.9vw, 43px);
   letter-spacing: -0.05em;
   line-height: 1.03;
 }
 
 .ida-showcase-name {
-  margin: 24px 0 0;
+  margin: 17px 0 0;
   color: #6e7880;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.065em;
   line-height: 1.4;
@@ -1813,48 +1813,48 @@ a {
 
 .ida-showcase-content {
   min-width: 0;
-  padding: 54px 54px 50px;
+  padding: 34px 36px 32px;
 }
 
 .ida-showcase-intro { max-width: 820px; }
-.ida-showcase-kicker { margin: 0 0 17px; color: var(--gold); font-size: 9px; font-weight: 850; letter-spacing: 0.15em; line-height: 1.5; text-transform: uppercase; }
-.ida-showcase-lead { margin: 0; color: #344756; font-size: clamp(17px, 1.45vw, 21px); line-height: 1.62; }
+.ida-showcase-kicker { margin: 0 0 11px; color: var(--gold); font-size: 8px; font-weight: 850; letter-spacing: 0.15em; line-height: 1.5; text-transform: uppercase; }
+.ida-showcase-lead { margin: 0; color: #344756; font-size: clamp(15px, 1.15vw, 18px); line-height: 1.52; }
 
 .ida-head-office {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(230px, 0.8fr);
   gap: 0;
-  margin-top: 36px;
+  margin-top: 23px;
   color: var(--navy);
   border: 1px solid rgba(7, 26, 45, 0.12);
   border-left: 3px solid var(--gold);
   background: linear-gradient(110deg, #e6eef1, #f4f1e9);
 }
 
-.ida-head-office > div { padding: 24px 26px; }
+.ida-head-office > div { padding: 17px 19px; }
 .ida-head-office > div + div { border-left: 1px solid rgba(7, 26, 45, 0.12); }
-.ida-head-office span { display: block; margin-bottom: 11px; color: #8a692d; font-size: 8px; font-weight: 850; letter-spacing: 0.15em; line-height: 1.4; text-transform: uppercase; }
-.ida-head-office address { max-width: 520px; font-size: 15px; font-style: normal; font-weight: 650; line-height: 1.55; }
+.ida-head-office span { display: block; margin-bottom: 7px; color: #8a692d; font-size: 8px; font-weight: 850; letter-spacing: 0.15em; line-height: 1.4; text-transform: uppercase; }
+.ida-head-office address { max-width: 520px; font-size: 13px; font-style: normal; font-weight: 650; line-height: 1.48; }
 .ida-head-office-phones { display: flex; flex-direction: column; align-items: flex-start; }
-.ida-head-office-phones a { color: var(--navy); font-size: 17px; font-weight: 760; line-height: 1.6; border-bottom: 1px solid rgba(7, 26, 45, 0.2); }
+.ida-head-office-phones a { color: var(--navy); font-size: 15px; font-weight: 760; line-height: 1.5; border-bottom: 1px solid rgba(7, 26, 45, 0.2); }
 .ida-head-office-phones a:hover { color: #8a692d; border-color: currentColor; }
 
-.ida-centres-heading { display: flex; gap: 28px; align-items: end; justify-content: space-between; margin-top: 40px; }
-.ida-centres-heading h3 { margin: 0; color: var(--navy); font-size: 25px; letter-spacing: -0.035em; }
+.ida-centres-heading { display: flex; gap: 24px; align-items: end; justify-content: space-between; margin-top: 25px; }
+.ida-centres-heading h3 { margin: 0; color: var(--navy); font-size: 22px; letter-spacing: -0.035em; }
 .ida-centres-heading p { max-width: 360px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.55; text-align: right; }
 
 .ida-location-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 14px;
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
 }
 
 .ida-location-grid article {
   display: flex;
-  min-height: 175px;
-  padding: 23px 24px 22px;
+  min-height: 142px;
+  padding: 17px 16px 16px;
   flex-direction: column;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -1865,13 +1865,13 @@ a {
 .ida-location-grid article:hover { background: #f7f3e9; transform: translateY(-2px); }
 .ida-location-grid article > div { display: flex; gap: 13px; align-items: baseline; }
 .ida-location-grid article > div span { color: var(--gold); font-size: 8px; font-weight: 850; letter-spacing: 0.14em; }
-.ida-location-grid h4 { margin: 0; color: var(--navy); font-size: 20px; letter-spacing: -0.025em; }
-.ida-location-grid address { max-width: 320px; margin-top: 18px; color: var(--muted); font-size: 12px; font-style: normal; line-height: 1.55; }
-.ida-location-grid article > a { align-self: flex-start; margin-top: auto; padding-top: 14px; color: var(--navy); font-size: 13px; font-weight: 760; border-bottom: 1px solid rgba(184, 148, 78, 0.7); }
+.ida-location-grid h4 { margin: 0; color: var(--navy); font-size: 17px; letter-spacing: -0.025em; }
+.ida-location-grid address { max-width: 320px; margin-top: 11px; color: var(--muted); font-size: 10px; font-style: normal; line-height: 1.48; }
+.ida-location-grid article > a { align-self: flex-start; margin-top: auto; padding-top: 10px; color: var(--navy); font-size: 11px; font-weight: 760; border-bottom: 1px solid rgba(184, 148, 78, 0.7); }
 .ida-location-grid article > a:hover { color: #8a692d; }
 
-.ida-showcase-actions { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; }
-.ida-showcase-actions .button { min-height: 48px; padding: 0 20px; }
+.ida-showcase-actions { display: flex; gap: 10px; margin-top: 21px; flex-wrap: wrap; }
+.ida-showcase-actions .button { min-height: 42px; padding: 0 17px; }
 .ida-button-outline { color: var(--navy); border-color: rgba(7, 26, 45, 0.28); background: transparent; }
 .ida-button-outline:hover { color: var(--white); border-color: var(--navy); background: var(--navy); }
 
@@ -1977,13 +1977,12 @@ a {
   .about-profile .about-route-visual { height: 440px; min-height: 0; }
   .about-profile .about-route-visual img { height: 100%; min-height: 0; }
   .values-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .ida-showcase-shell { grid-template-columns: minmax(310px, 0.72fr) minmax(0, 1.28fr); }
-  .ida-showcase-brand { padding: 44px 38px; }
-  .ida-showcase-logo { width: 210px; height: 210px; }
-  .ida-showcase-logo img { width: 198px; height: 202px; }
-  .ida-showcase-content { padding: 45px 42px; }
-  .ida-head-office { grid-template-columns: 1fr; }
-  .ida-head-office > div + div { border-top: 1px solid rgba(7, 26, 45, 0.12); border-left: 0; }
+  .ida-showcase-shell { grid-template-columns: minmax(280px, 0.68fr) minmax(0, 1.32fr); }
+  .ida-showcase-brand { padding: 34px 30px; }
+  .ida-showcase-logo { width: 168px; height: 168px; }
+  .ida-showcase-logo img { width: 157px; height: 161px; }
+  .ida-showcase-content { padding: 32px; }
+  .ida-location-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .achievement-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .contact-inner { grid-template-columns: 1fr 1fr; gap: 5vw; }
 }
@@ -1998,16 +1997,16 @@ a {
   .about-profile .about-route-visual img { height: 100%; min-height: 0; }
   .about-narrative { max-width: 760px; }
   .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .ida-showcase { padding: 76px 0; }
+  .ida-showcase { padding: 58px 0; }
   .ida-showcase-shell { grid-template-columns: 1fr; }
-  .ida-showcase-brand { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 18px 34px; align-items: center; padding: 42px; border-right: 0; border-bottom: 1px solid rgba(7, 26, 45, 0.1); }
+  .ida-showcase-brand { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 14px 28px; align-items: center; padding: 32px; border-right: 0; border-bottom: 1px solid rgba(7, 26, 45, 0.1); }
   .ida-showcase-brand .overline { grid-column: 1 / -1; margin-bottom: 4px; }
-  .ida-showcase-logo { width: 190px; height: 190px; grid-column: 1; grid-row: 2 / 5; }
-  .ida-showcase-logo img { width: 180px; height: 184px; }
+  .ida-showcase-logo { width: 160px; height: 160px; grid-column: 1; grid-row: 2 / 5; }
+  .ida-showcase-logo img { width: 150px; height: 154px; }
   .ida-showcase-badge { grid-column: 2; margin-top: 0; justify-self: start; }
   .ida-showcase-brand h2 { grid-column: 2; margin-top: 0; }
   .ida-showcase-name { grid-column: 2; margin-top: 0; }
-  .ida-showcase-content { padding: 44px 42px 46px; }
+  .ida-showcase-content { padding: 32px; }
   .compact-heading, .services-heading, .history-header, .insights-heading, .contact-inner { grid-template-columns: 1fr; }
   .compact-heading { gap: 28px; }
   .achievement-grid, .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -2025,26 +2024,43 @@ a {
 }
 
 @media (max-width: 640px) {
-  .ida-showcase { padding: 58px 0; }
+  .ida-showcase { padding: 42px 0; }
   .ida-showcase-shell { border-radius: 13px; }
-  .ida-showcase-brand { display: flex; padding: 34px 24px 32px; align-items: flex-start; }
-  .ida-showcase-brand .overline { margin-bottom: 25px; }
-  .ida-showcase-logo { width: 174px; height: 174px; }
-  .ida-showcase-logo img { width: 164px; height: 168px; }
-  .ida-showcase-badge { margin-top: 26px; }
-  .ida-showcase-brand h2 { margin-top: 21px; font-size: 38px; }
-  .ida-showcase-name { margin-top: 19px; font-size: 11px; }
-  .ida-showcase-content { padding: 34px 22px 30px; }
+  .ida-showcase-brand { display: flex; padding: 27px 22px 25px; align-items: flex-start; }
+  .ida-showcase-brand .overline { margin-bottom: 18px; }
+  .ida-showcase-logo { width: 144px; height: 144px; }
+  .ida-showcase-logo img { width: 135px; height: 138px; }
+  .ida-showcase-badge { margin-top: 19px; }
+  .ida-showcase-brand h2 { margin-top: 17px; font-size: 32px; }
+  .ida-showcase-name { margin-top: 14px; font-size: 10px; }
+  .ida-showcase-content { padding: 27px 20px 25px; }
   .ida-showcase-kicker { margin-bottom: 13px; font-size: 8px; }
   .ida-showcase-lead { font-size: 16px; }
-  .ida-head-office { grid-template-columns: 1fr; margin-top: 28px; }
-  .ida-head-office > div { padding: 21px 19px; }
-  .ida-centres-heading { display: block; margin-top: 32px; }
-  .ida-centres-heading h3 { font-size: 23px; }
+  .ida-head-office { grid-template-columns: 1fr; margin-top: 21px; }
+  .ida-head-office > div { padding: 16px; }
+  .ida-head-office > div + div { border-top: 1px solid rgba(7, 26, 45, 0.12); border-left: 0; }
+  .ida-centres-heading { display: block; margin-top: 24px; }
+  .ida-centres-heading h3 { font-size: 21px; }
   .ida-centres-heading p { max-width: none; margin-top: 10px; text-align: left; }
-  .ida-location-grid { grid-template-columns: 1fr; margin-top: 17px; }
-  .ida-location-grid article { min-height: 158px; padding: 21px 20px; }
-  .ida-showcase-actions { display: grid; grid-template-columns: 1fr; margin-top: 26px; }
+  .ida-location-grid {
+    display: flex;
+    gap: 10px;
+    margin: 17px -20px 0 0;
+    padding-right: 20px;
+    overflow-x: auto;
+    border: 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .ida-location-grid::-webkit-scrollbar { display: none; }
+  .ida-location-grid article {
+    min-height: 132px;
+    padding: 17px 16px;
+    flex: 0 0 min(76vw, 270px);
+    border: 1px solid var(--line);
+    scroll-snap-align: start;
+  }
+  .ida-showcase-actions { display: grid; grid-template-columns: 1fr; margin-top: 21px; }
   .ida-showcase-actions .button { width: 100%; padding: 0 15px; text-align: center; }
   .about-profile { gap: 34px; margin-top: 52px; padding-top: 42px; }
   .about-profile .about-route-visual { height: 350px; min-height: 0; }
