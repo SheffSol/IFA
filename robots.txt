@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Host: ifa.org.kz
 Sitemap: https://ifa.org.kz/sitemap.xml

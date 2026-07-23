@@ -14,6 +14,8 @@
 - `api/partnership.js` — серверная приёмка и запись заявок в Google Sheets;
 - `assets/` — только изображения, которые используются сайтом;
 - `robots.txt`, `sitemap.xml` — правила индексации и карта публичных страниц;
+- `site.webmanifest`, `assets/ifa-favicon.png` — единая поисковая и браузерная идентичность IFA;
+- `31d16d29895846ebaddacd0bee234642.txt` — публичный ключ протокола IndexNow;
 - `.env.example` — перечень переменных окружения без секретных значений;
 - `vercel.json` — настройки чистых URL и HTTP-заголовков для Vercel.
 
@@ -46,6 +48,7 @@ python -m http.server 8080
 - пять CSS-файлов: `styles.css`, `about.css`, `idp-department.css`, `cooperation.css`, `material.css`;
 - `app.js` и `navigation.js`;
 - `robots.txt`, `sitemap.xml`, `vercel.json` и `README.md`;
+- `site.webmanifest` и файл ключа IndexNow `31d16d29895846ebaddacd0bee234642.txt`;
 - `.gitignore`, `.vercelignore` и `.env.example`.
 
 Не загружайте `.git/`, `.agents/`, `.vercel/`, `.env`, `.env.local`, архивы и любые JSON-ключи Google. Эти данные либо локальные, либо секретные.
@@ -90,6 +93,27 @@ python -m http.server 8080
 5. Дождитесь статуса **Valid Configuration** — SSL-сертификат будет выпущен автоматически.
 
 Не копируйте DNS-значения из сторонних инструкций: используйте значения, которые Vercel показывает именно для вашего проекта.
+
+## Индексация и поисковый логотип
+
+В коде уже настроены:
+
+- единый квадратный favicon IFA размером 128 × 128 px;
+- отдельный логотип организации 640 × 640 px в разметке Schema.org `Organization`;
+- названия `IFA Kazakhstan`, `International Federation of Autotourism` и русское наименование Федерации;
+- canonical, robots meta, Open Graph, Twitter Cards и структурированные данные;
+- XML Sitemap с основными публичными страницами и логотипом;
+- публичный ключ IndexNow для уведомления поддерживающих протокол поисковых систем.
+
+После публикации выполните однократную регистрацию:
+
+1. Добавьте доменный ресурс `ifa.org.kz` в Google Search Console через DNS и отправьте `https://ifa.org.kz/sitemap.xml`.
+2. Добавьте сайт в Bing Webmaster Tools, отправьте ту же карту сайта и проверьте IndexNow.
+3. Добавьте сайт в Яндекс Вебмастер, отправьте карту сайта и запросите переобход главной страницы.
+
+Не меняйте без необходимости адреса `/assets/ifa-favicon.png` и `/assets/ifa-logo-finale.webp`: поисковым системам нужен стабильный URL. После существенного обновления страницы меняйте её `lastmod` в `sitemap.xml` и повторно уведомляйте IndexNow.
+
+Появление favicon или логотипа в выдаче определяется самой поисковой системой и происходит после повторного обхода; код сайта не может гарантировать конкретный срок или формат отображения.
 
 ## Как работает форма
 

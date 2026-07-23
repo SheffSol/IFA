@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "International Federation of Autotourism — IFA Kazakhstan",
+  "short_name": "IFA Kazakhstan",
+  "description": "Official website of the International Federation of Autotourism in Kazakhstan.",
+  "lang": "ru",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#071a2d",
+  "theme_color": "#071a2d",
+  "categories": ["travel", "automotive"],
+  "icons": [
+    {
+      "src": "/assets/ifa-favicon.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/ifa-logo-finale.webp",
+      "sizes": "640x640",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
