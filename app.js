@@ -6,6 +6,8 @@ const translations = {
     cooperationPageDescription: "Сотрудничество с Международной Федерацией Автотуризма для развития маршрутов, ответственной мобильности и партнёрской инфраструктуры.",
     aboutPageTitle: "О нас — институциональное досье IFA",
     aboutPageDescription: "Институциональное досье IFA: основание с 2002 года, уставный мандат, сервисная модель с IDA, инфраструктура МВУ и текущие программы.",
+    idpPageTitle: "Департамент выдачи МВУ — IFA Kazakhstan",
+    idpPageDescription: "Департамент выдачи Международного Водительского Удостоверения IFA в Казахстане: партнёр IDA, официальные филиалы, контакты и договорное взаимодействие с Правительством для граждан.",
     skip: "Перейти к содержанию",
     topLeft: "Республика Казахстан · с 2002 года",
     topRight: "Международная мобильность · Автотуризм · Member Services",
@@ -13,6 +15,7 @@ const translations = {
     navActivities: "Маршруты",
     navHistory: "Этапы",
     navInsights: "Полезное",
+    navIdpDepartment: "Департамент выдачи МВУ",
     navJoin: "Вступить",
     dropAbout: "О нас",
     dropHistory: "История IFA",
@@ -26,22 +29,25 @@ const translations = {
     aboutOverline: "About IFA",
     aboutTitle: "О нас",
     aboutLead: "IFA — общественный фонд и некоммерческая организация, деятельность которой официально согласована и зарегистрирована Министерством юстиции Республики Казахстан в 2002 году. В соответствии с Уставом Федерация осуществляет деятельность в сфере развития автотуризма, а также оформления и выдачи международных водительских удостоверений.",
-    aboutCommunityKicker: "Институциональная модель",
-    aboutCommunityTitle: "Федерация, партнёрская инфраструктура и практический результат",
-    aboutCommunityText: "IFA была учреждена в 2002 году с целью создания общества, в котором автотуризм преодолевает географические и культурные границы, способствует обмену культурным опытом и способствует формированию устойчивого опыта путешествий для всех.",
-    aboutLink: "Открыть институциональное досье",
+    aboutCommunityKicker: "Государственно-экспертное взаимодействие",
+    aboutCommunityTitle: "Экспертная позиция IFA в развитии автотуризма",
+    aboutCommunityText: "IFA взаимодействует с государственными структурами и отраслевыми организациями по вопросам автомобильной мобильности, водительских документов, пограничных процедур, дорожной безопасности и сервисной инфраструктуры. Федерация консолидирует обращения, готовит официальные запросы и предложения и сопровождает вопросы до получения позиции компетентного органа.",
+    aboutLink: "О нас",
     aboutVisualKicker: "Мангистау · Казахстан",
     aboutVisualTitle: "Территория, которую открывает дорога",
-    valueOneTitle: "Трансграничная подготовка",
-    valueOneText: "Проверяем документы, правила въезда, страхование и требования к управлению автомобилем до начала поездки.",
-    valueTwoTitle: "Содержание маршрута",
-    valueTwoText: "Связываем дорогу с культурными точками, локальными правилами и практической информацией о территории.",
-    valueThreeTitle: "Ответственное поведение",
-    valueThreeText: "Фиксируем требования к природным территориям, стоянкам, отходам и взаимодействию с местными сообществами.",
-    valueFourTitle: "Безопасность и резерв",
-    valueFourText: "Используем чек-листы автомобиля, связи, сезонных рисков и действий при поломке или изменении маршрута.",
-    valueFiveTitle: "Проверяемая инфраструктура",
-    valueFiveText: "Маршрутный профиль должен содержать точки топлива, размещения, технической помощи и экстренных контактов.",
+    governmentAgreementLabel: "Действующее соглашение",
+    governmentAgreementTitle: "НАО «Государственная корпорация «Правительство для граждан»",
+    governmentAgreementText: "Соглашение формирует рабочий контур взаимодействия по обслуживанию международных водителей и развитию доступной сервисной инфраструктуры.",
+    valueOneTitle: "Официальные обращения",
+    valueOneText: "Фиксируем системные вопросы автотуристов, определяем компетентный государственный орган и направляем аргументированный запрос с предлагаемым решением.",
+    valueTwoTitle: "Дорожная безопасность",
+    valueTwoText: "Взаимодействуем с уполномоченными подразделениями дорожной и административной полиции по вопросам правил движения, безопасности маршрутов и информирования водителей.",
+    valueThreeTitle: "Границы и таможенные процедуры",
+    valueThreeText: "Систематизируем вопросы пересечения границы, временного ввоза автомобиля и требований к документам для обращения в органы государственных доходов и пограничного контроля.",
+    valueFourTitle: "Нормативная экспертиза",
+    valueFourText: "Анализируем практику применения правил, собираем позиции участников отрасли и готовим предложения по устранению административных барьеров для автотуризма.",
+    valueFiveTitle: "Инфраструктура автотуризма",
+    valueFiveText: "Выносим на рассмотрение вопросы навигации, сервисных точек, остановок, экстренной помощи и доступности маршрутов, добиваясь их включения в рабочую повестку.",
     routesOverline: "IFA Route Development",
     routesTitle: "Международные маршруты IFA",
     routesLead: "Международные автомаршруты IFA с расчётной протяжённостью, временем в пути и рекомендуемым сезоном автомобильного путешествия.",
@@ -103,12 +109,6 @@ const translations = {
     statusParticipation: "Подтверждённое участие",
     statusDevelopment: "Текущая разработка",
     statusPlanned: "Планируемый этап",
-    dossierFactOneLabel: "Учреждение",
-    dossierFactOneText: "Общественный фонд зарегистрирован в Казахстане",
-    dossierFactTwoLabel: "Сервисная модель",
-    dossierFactTwoText: "Договорная работа через аккредитованного партнёра IDA",
-    dossierFactThreeLabel: "Опорные города",
-    dossierFactThreeText: "Алматы, Астана, Шымкент и Атырау",
     serviceVisualTag: "International Driving Permit",
     serviceVisualTitle: "Документальная готовность международного водителя",
     dossierServiceOverline: "Active service direction",
@@ -124,7 +124,7 @@ const translations = {
     idaShowcaseOverline: "Official IDP services / Kazakhstan",
     idaShowcaseTitle: "Департамент выдачи МВУ в Казахстане",
     idaShowcaseKicker: "Практическая инфраструктура для международных водителей",
-    idaShowcaseLead: "International Drivers Association — официально аккредитованный партнёр IFA, уполномоченный на оформление и выдачу Международного Водительского Удостоверения в Казахстане — онлайн и через официальные точки выдачи.",
+    idaShowcaseLead: "International Drivers Association — официально аккредитованный партнёр IFA, уполномоченный на оформление и выдачу Международного Водительского Удостоверения в Казахстане — онлайн и через официальные филиалы.",
     idaHeadOfficeLabel: "Головной офис · Алматы",
     idaHeadOfficeAddress: "ул. Тулебаева, 95/1, 1 этаж — вход со стороны ул. Толе би",
     idaContactLabel: "Связаться с департаментом",
@@ -134,9 +134,11 @@ const translations = {
     idaAstanaAddress: "СпецЦОН, ул. С. Муканова, 2, 1 этаж",
     idaShymkentAddress: "СпецЦОН, мкр. Достык, 2343/1, 1 этаж",
     idaAtyrauAddress: "СпецЦОН, Северная промышленная зона, 69, 1 этаж",
+    idpApplyButton: "Оформить МВУ ↗",
+    idpCtaOverline: "International driver services",
+    idpCtaTitle: "Подготовьте документы до начала международной поездки",
     dossierTimelineOverline: "Verified chronology",
     dossierTimelineTitle: "Этапы",
-    dossierTimelineLead: "Хронология разделяет подтверждённую основу, действующую сервисную работу, текущую разработку и будущий план.",
     dossierTimelineOneTitle: "Учреждение фонда",
     dossierTimelineOneText: "IFA получает правовую и уставную основу для деятельности в сфере автотуризма.",
     dossierTimelineTwoTitle: "Сервисная модель с IDA",
@@ -210,6 +212,8 @@ const translations = {
     cooperationPageDescription: "Cooperation with the International Federation of Autotourism to develop routes, responsible mobility and partner infrastructure.",
     aboutPageTitle: "About us — IFA institutional profile",
     aboutPageDescription: "IFA institutional profile: foundation since 2002, charter mandate, service model with IDA, IDP infrastructure and current programmes.",
+    idpPageTitle: "IDP Issuing Department — IFA Kazakhstan",
+    idpPageDescription: "IFA International Driving Permit issuing department in Kazakhstan: IDA partner, official branches, contacts and contractual cooperation with Government for Citizens.",
     skip: "Skip to content",
     topLeft: "Republic of Kazakhstan · since 2002",
     topRight: "International mobility · Autotourism · Member Services",
@@ -217,6 +221,7 @@ const translations = {
     navActivities: "Routes",
     navHistory: "Stages",
     navInsights: "Resources",
+    navIdpDepartment: "IDP Issuing Department",
     navJoin: "Join",
     dropAbout: "About us",
     dropHistory: "IFA history",
@@ -230,22 +235,25 @@ const translations = {
     aboutOverline: "About IFA",
     aboutTitle: "About us",
     aboutLead: "IFA is a public foundation and non-profit organisation whose activities were officially approved and registered by the Ministry of Justice of the Republic of Kazakhstan in 2002. In accordance with its Charter, the Federation operates in the development of autotourism and in the processing and issuance of International Driving Permits.",
-    aboutCommunityKicker: "Institutional model",
-    aboutCommunityTitle: "Federation, partner infrastructure and practical outcome",
-    aboutCommunityText: "IFA was established in 2002 to help create a community in which motor tourism crosses geographical and cultural boundaries, encourages the exchange of cultural experience and supports sustainable travel for everyone.",
-    aboutLink: "Open the institutional profile",
+    aboutCommunityKicker: "Public-sector and expert engagement",
+    aboutCommunityTitle: "IFA expertise in developing autotourism",
+    aboutCommunityText: "IFA engages with public authorities and sector organisations on automotive mobility, driver documentation, border procedures, road safety and service infrastructure. The Federation consolidates stakeholder submissions, prepares formal requests and proposals, and follows each matter through to a response from the competent authority.",
+    aboutLink: "About us",
     aboutVisualKicker: "Mangystau · Kazakhstan",
     aboutVisualTitle: "Territory revealed by the road",
-    valueOneTitle: "Cross-border preparation",
-    valueOneText: "Check documents, entry rules, insurance and driving requirements before a journey begins.",
-    valueTwoTitle: "Route content",
-    valueTwoText: "Connect the road with cultural stops, local rules and practical information about each territory.",
-    valueThreeTitle: "Responsible conduct",
-    valueThreeText: "Define expectations for protected areas, parking, waste and engagement with local communities.",
-    valueFourTitle: "Safety and contingencies",
-    valueFourText: "Use checklists for the vehicle, communications, seasonal risks and actions after a breakdown or route change.",
-    valueFiveTitle: "Verified infrastructure",
-    valueFiveText: "A route profile must identify fuel, accommodation, technical assistance and emergency contacts.",
+    governmentAgreementLabel: "Active agreement",
+    governmentAgreementTitle: "NJSC State Corporation Government for Citizens",
+    governmentAgreementText: "The agreement establishes a working framework for serving international drivers and developing accessible service infrastructure.",
+    valueOneTitle: "Formal submissions",
+    valueOneText: "We document recurring issues faced by motor travellers, identify the competent public authority and submit a reasoned request with a proposed solution.",
+    valueTwoTitle: "Road safety",
+    valueTwoText: "We engage with authorised road and administrative police units on traffic rules, route safety and clear information for drivers.",
+    valueThreeTitle: "Borders and customs procedures",
+    valueThreeText: "We systematise questions on border crossing, temporary vehicle import and documentation for submission to state revenue and border-control authorities.",
+    valueFourTitle: "Regulatory expertise",
+    valueFourText: "We analyse how rules work in practice, consolidate sector positions and prepare proposals to remove administrative barriers to autotourism.",
+    valueFiveTitle: "Autotourism infrastructure",
+    valueFiveText: "We raise issues concerning navigation, service points, stopping facilities, emergency assistance and route accessibility for inclusion in the working agenda.",
     routesOverline: "IFA Route Development",
     routesTitle: "IFA International Routes",
     routesLead: "IFA international motor routes with estimated distance, driving time and a recommended travel season.",
@@ -307,12 +315,6 @@ const translations = {
     statusParticipation: "Confirmed participation",
     statusDevelopment: "Current development",
     statusPlanned: "Planned stage",
-    dossierFactOneLabel: "Established",
-    dossierFactOneText: "Public foundation registered in Kazakhstan",
-    dossierFactTwoLabel: "Service model",
-    dossierFactTwoText: "Contract-based work through accredited partner IDA",
-    dossierFactThreeLabel: "Anchor cities",
-    dossierFactThreeText: "Almaty, Astana, Shymkent and Atyrau",
     serviceVisualTag: "International Driving Permit",
     serviceVisualTitle: "Document readiness for the international driver",
     dossierServiceOverline: "Active service direction",
@@ -328,7 +330,7 @@ const translations = {
     idaShowcaseOverline: "Official IDP services / Kazakhstan",
     idaShowcaseTitle: "IDP Issuing Department in Kazakhstan",
     idaShowcaseKicker: "Practical infrastructure for international drivers",
-    idaShowcaseLead: "International Drivers Association is IFA's officially accredited partner, authorised to process and issue International Driving Permits in Kazakhstan — online and through official issuing centres.",
+    idaShowcaseLead: "International Drivers Association is IFA's officially accredited partner, authorised to process and issue International Driving Permits in Kazakhstan — online and through official branches.",
     idaHeadOfficeLabel: "Head office · Almaty",
     idaHeadOfficeAddress: "95/1 Tulebayev Street, 1st floor — entrance from Tole Bi Street",
     idaContactLabel: "Contact the department",
@@ -338,9 +340,11 @@ const translations = {
     idaAstanaAddress: "Specialised PSC, 2 S. Mukanov Street, 1st floor",
     idaShymkentAddress: "Specialised PSC, 2343/1 Dostyk District, 1st floor",
     idaAtyrauAddress: "Specialised PSC, 69 Northern Industrial Zone, 1st floor",
+    idpApplyButton: "Apply for an IDP ↗",
+    idpCtaOverline: "International driver services",
+    idpCtaTitle: "Prepare your documents before an international journey",
     dossierTimelineOverline: "Verified chronology",
     dossierTimelineTitle: "Milestones",
-    dossierTimelineLead: "The chronology separates the confirmed foundation, active service work, current development and a future plan.",
     dossierTimelineOneTitle: "Foundation established",
     dossierTimelineOneText: "IFA receives its legal and charter foundation for work in autotourism.",
     dossierTimelineTwoTitle: "Service model with IDA",
@@ -442,6 +446,7 @@ function setLanguage(language) {
   const pageMeta = {
     cooperation: [dictionary.cooperationPageTitle, dictionary.cooperationPageDescription],
     about: [dictionary.aboutPageTitle, dictionary.aboutPageDescription],
+    idp: [dictionary.idpPageTitle, dictionary.idpPageDescription],
     home: [dictionary.pageTitle, dictionary.pageDescription],
   };
   const [pageTitle, pageDescription] = pageMeta[page] || pageMeta.home;
@@ -504,15 +509,16 @@ const routeSlides = Array.from(document.querySelectorAll(".route-slide"));
 const routeRail = document.querySelector(".route-scroll-status .scroll-rail");
 const routeThumb = document.querySelector(".route-scroll-thumb");
 const historyTrack = document.querySelector(".history-track");
+const historyCards = Array.from(document.querySelectorAll(".history-card"));
 const historyRail = document.querySelector(".history-progress");
 const historyProgress = document.querySelector(".history-progress span");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const compactHistory = window.matchMedia("(max-width: 720px)");
 
 let historyIsDragging = false;
 let historyPauseUntil = 0;
 let historyVisible = !("IntersectionObserver" in window);
 let historyAutoplayComplete = false;
-let historyAutoplayAdvanced = false;
 
 function updateScrollIndicator(track, rail, thumb) {
   if (!track || !rail || !thumb) return;
@@ -537,7 +543,11 @@ function updateRouteState() {
     Math.max(0, Math.round(routeTrack.scrollLeft / Math.max(1, routeTrack.clientWidth))),
   );
 
-  routeSlides.forEach((slide, index) => slide.classList.toggle("is-active", index === activeIndex));
+  routeSlides.forEach((slide, index) => {
+    const active = index === activeIndex;
+    slide.classList.toggle("is-active", active);
+    slide.setAttribute("aria-hidden", String(!active));
+  });
   updateScrollIndicator(routeTrack, routeRail, routeThumb);
 }
 
@@ -545,8 +555,26 @@ function updateHistoryState() {
   updateScrollIndicator(historyTrack, historyRail, historyProgress);
   if (!historyTrack) return;
   const scrollable = Math.max(0, historyTrack.scrollWidth - historyTrack.clientWidth);
-  if (historyTrack.scrollLeft > 2) historyAutoplayAdvanced = true;
   if (scrollable <= 2 || historyTrack.scrollLeft >= scrollable - 2) historyAutoplayComplete = true;
+
+  if (historyCards.length) {
+    const trackLeft = historyTrack.getBoundingClientRect().left;
+    let activeCard = historyCards[0];
+    let activeDistance = Number.POSITIVE_INFINITY;
+    historyCards.forEach((card) => {
+      const distance = Math.abs(card.getBoundingClientRect().left - trackLeft);
+      if (distance < activeDistance) {
+        activeDistance = distance;
+        activeCard = card;
+      }
+    });
+    historyCards.forEach((card) => {
+      const active = card === activeCard;
+      card.classList.toggle("is-active", active);
+      if (active) card.setAttribute("aria-current", "step");
+      else card.removeAttribute("aria-current");
+    });
+  }
 }
 
 function enableSwipeNavigation(track, options = {}) {
@@ -582,6 +610,7 @@ function enableSwipeNavigation(track, options = {}) {
 
   track.addEventListener("pointerdown", (event) => {
     if (!event.isPrimary || (event.pointerType === "mouse" && event.button !== 0)) return;
+    if (event.pointerType === "touch") return;
     activePointer = event.pointerId;
     startX = event.clientX;
     startScrollLeft = track.scrollLeft;
@@ -607,6 +636,9 @@ function enableSwipeNavigation(track, options = {}) {
     options.onEnd?.();
   });
   track.addEventListener("dragstart", (event) => event.preventDefault());
+  track.addEventListener("touchstart", () => options.onStart?.(), { passive: true });
+  track.addEventListener("touchend", () => options.onEnd?.(), { passive: true });
+  track.addEventListener("touchcancel", () => options.onEnd?.(), { passive: true });
 
   track.addEventListener("keydown", (event) => {
     if (!["ArrowLeft", "ArrowRight", "PageUp", "PageDown"].includes(event.key)) return;
@@ -718,10 +750,7 @@ updateHorizontalTracks();
 if (historyTrack && "IntersectionObserver" in window) {
   const historyObserver = new IntersectionObserver((entries) => {
     historyVisible = entries.some((entry) => entry.isIntersecting);
-    if (historyVisible && !historyAutoplayAdvanced) {
-      historyAutoplayComplete = historyMaxScroll() <= 2;
-      historyPreviousTime = performance.now();
-    }
+    if (historyVisible) historyPreviousTime = performance.now();
   }, { threshold: 0.18 });
   historyObserver.observe(historyTrack);
 }
@@ -732,21 +761,17 @@ function animateHistory() {
   const time = performance.now();
   const elapsed = Math.min(40, time - historyPreviousTime);
   historyPreviousTime = time;
+  if (compactHistory.matches) return;
 
   const historyRect = historyTrack?.getBoundingClientRect();
   const historyOnScreen = Boolean(
     historyRect && historyRect.bottom > 0 && historyRect.top < window.innerHeight,
   );
 
-  if (historyTrack && historyOnScreen && !historyAutoplayAdvanced && historyTrack.scrollLeft <= 2 && historyMaxScroll() > 2) {
-    historyAutoplayComplete = false;
-  }
-
   if (historyTrack && !historyAutoplayComplete && (historyVisible || historyOnScreen) && !historyIsDragging && time >= historyPauseUntil && !reducedMotion.matches && !document.hidden) {
     const end = historyMaxScroll();
     const nextPosition = Math.min(end, historyTrack.scrollLeft + elapsed * 0.052);
     historyTrack.scrollLeft = nextPosition;
-    if (nextPosition > 2) historyAutoplayAdvanced = true;
     if (nextPosition >= end - 0.5) {
       historyTrack.scrollLeft = end;
       historyAutoplayComplete = true;
@@ -756,6 +781,39 @@ function animateHistory() {
 }
 
 if (historyTrack) window.setInterval(animateHistory, 32);
+
+function advanceCompactHistory() {
+  if (!historyTrack || !historyCards.length || !compactHistory.matches || reducedMotion.matches || document.hidden || !historyVisible || historyAutoplayComplete || historyIsDragging || performance.now() < historyPauseUntil) return;
+
+  const trackLeft = historyTrack.getBoundingClientRect().left;
+  let currentIndex = 0;
+  let currentDistance = Number.POSITIVE_INFINITY;
+  historyCards.forEach((card, index) => {
+    const distance = Math.abs(card.getBoundingClientRect().left - trackLeft);
+    if (distance < currentDistance) {
+      currentDistance = distance;
+      currentIndex = index;
+    }
+  });
+
+  const nextIndex = Math.min(historyCards.length - 1, currentIndex + 1);
+  const target = Math.min(
+    historyMaxScroll(),
+    Math.max(0, historyCards[nextIndex].offsetLeft - historyTrack.offsetLeft),
+  );
+  historyTrack.scrollTo({ left: target, behavior: "smooth" });
+  if (nextIndex === historyCards.length - 1) {
+    window.setTimeout(() => {
+      if (historyTrack.scrollLeft >= historyMaxScroll() - 2) historyAutoplayComplete = true;
+      updateHistoryState();
+    }, 700);
+  }
+}
+
+if (historyTrack) window.setInterval(advanceCompactHistory, 4200);
+historyTrack?.addEventListener("wheel", () => {
+  historyPauseUntil = performance.now() + 2600;
+}, { passive: true });
 
 document.addEventListener("visibilitychange", () => {
   historyPreviousTime = performance.now();

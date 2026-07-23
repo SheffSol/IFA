@@ -78,7 +78,6 @@
 .material-route-line span:first-child::after { left: 50%; }
 .material-route-line span:last-child::after { right: 50%; }
 
-.material-note { padding: 22px 24px; color: #5d6871; font-size: 12px; line-height: 1.65; border: 1px solid var(--line); background: var(--paper-warm); }
 .material-next { color: var(--navy); background: linear-gradient(110deg, var(--mist-blue), var(--mist-blue-soft)); border-top: 1px solid rgba(7,26,45,0.1); }
 .material-next-inner { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; min-height: 150px; padding: 26px 0; }
 .material-next-inner > div { min-width: 0; }

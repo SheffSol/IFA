@@ -6,9 +6,10 @@
 
 - `index.html` — главная страница;
 - `about.html` — страница «О нас»;
+- `idp-department.html` — Департамент выдачи Международного Водительского Удостоверения;
 - `cooperation.html` — страница сотрудничества;
 - `material-*.html` — материалы экспертного центра;
-- `styles.css`, `about.css`, `cooperation.css`, `material.css` — стили;
+- `styles.css`, `about.css`, `idp-department.css`, `cooperation.css`, `material.css` — стили;
 - `app.js`, `navigation.js` — языки, меню, карусели, анимации и форма;
 - `api/partnership.js` — серверная приёмка и запись заявок в Google Sheets;
 - `assets/` — только изображения, которые используются сайтом;
@@ -41,8 +42,8 @@ python -m http.server 8080
 В GitHub должны попасть:
 
 - папки `api/` и `assets/`;
-- шесть HTML-страниц: `index.html`, `about.html`, `cooperation.html` и три файла `material-*.html`;
-- четыре CSS-файла: `styles.css`, `about.css`, `cooperation.css`, `material.css`;
+- семь HTML-страниц: `index.html`, `about.html`, `idp-department.html`, `cooperation.html` и три файла `material-*.html`;
+- пять CSS-файлов: `styles.css`, `about.css`, `idp-department.css`, `cooperation.css`, `material.css`;
 - `app.js` и `navigation.js`;
 - `robots.txt`, `sitemap.xml`, `vercel.json` и `README.md`;
 - `.gitignore`, `.vercelignore` и `.env.example`.
