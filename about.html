@@ -16,10 +16,10 @@
     <meta property="og:image" content="https://ifa.org.kz/assets/ifa-team.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="assets/ifa-favicon.png" />
-    <link rel="stylesheet" href="styles.css?v=8" />
-    <link rel="stylesheet" href="about.css?v=12" />
+    <link rel="stylesheet" href="styles.css?v=14" />
+    <link rel="stylesheet" href="about.css?v=14" />
     <script src="navigation.js" defer></script>
-    <script src="app.js?v=12" defer></script>
+    <script src="app.js?v=14" defer></script>
   </head>
   <body class="dossier-page" data-page="about">
     <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержанию</a>
@@ -33,18 +33,8 @@
 
         <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
           <a href="about.html" aria-current="page" data-i18n="navFederation">О нас</a>
-          <div class="nav-group">
-            <a href="index.html#routes" data-i18n="navActivities">Маршруты</a>
-            <button class="nav-expand" type="button" aria-label="Открыть раздел Маршруты" aria-expanded="false">+</button>
-            <div class="nav-dropdown">
-              <a href="index.html#routes" data-i18n="dropRoutes">Международные маршруты</a>
-              <a href="index.html#insights" data-i18n="navInsights">Полезное</a>
-            </div>
-          </div>
-          <a href="index.html#history" data-i18n="navHistory">Этапы</a>
-          <a href="index.html#insights" data-i18n="navInsights">Полезное</a>
+          <a href="cooperation.html" data-i18n="navMembership">Вступить в членство</a>
           <a href="idp-department.html" data-i18n="navIdpDepartment">Департамент выдачи МВУ</a>
-          <a class="mobile-nav-cta" href="cooperation.html" data-i18n="navJoin">Вступить</a>
         </nav>
 
         <div class="nav-actions">
@@ -52,7 +42,6 @@
             <button class="lang-button is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
             <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
           </div>
-          <a class="nav-cta" href="cooperation.html" data-i18n="navJoin">Вступить</a>
           <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
         </div>
       </div>
@@ -78,12 +67,45 @@
         <div class="container">
           <div class="timeline-heading reveal"><div><p class="overline" data-i18n="dossierTimelineOverline">Verified chronology</p><h2 id="timeline-title" data-i18n="dossierTimelineTitle">Этапы</h2></div></div>
           <div class="dossier-timeline-grid">
-            <article class="reveal"><strong>2002</strong><span class="status-tag status-confirmed" data-i18n="statusConfirmed">Подтверждённая основа</span><h3 data-i18n="dossierTimelineOneTitle">Учреждение фонда</h3><p data-i18n="dossierTimelineOneText">IFA получает правовую и уставную основу для деятельности в сфере автотуризма.</p></article>
-            <article class="reveal"><strong>2014</strong><span class="status-tag status-active" data-i18n="statusActive">Действующее направление</span><h3 data-i18n="dossierTimelineTwoTitle">Сервисная модель с IDA</h3><p data-i18n="dossierTimelineTwoText">Практическая работа с международными водительскими документами выстраивается через аккредитованного партнёра.</p></article>
-            <article class="reveal"><strong>2014–2025</strong><span class="status-tag status-active" data-i18n="statusActive">Действующее направление</span><h3 data-i18n="dossierTimelineThreeTitle">Сервисная преемственность</h3><p data-i18n="dossierTimelineThreeText">Поддерживается документальная и информационная работа для водителей через партнёрскую инфраструктуру.</p></article>
-            <article class="reveal"><strong>2019</strong><span class="status-tag status-participation" data-i18n="statusParticipation">Подтверждённое участие</span><h3 data-i18n="historyNomadTitle">Экспедиция «Легенды Юга»</h3><p data-i18n="historyNomadText">20–27 апреля представители IDA участвовали в экспедиции «Легенды Юга» в рамках сотрудничества с Nomad Explorer. Маршрут прошёл по Жамбылской и Туркестанской областям. Организатором выступила команда Nomad Explorer Маргулана Сейсембаева; в истории IFA эпизод отмечен как опыт партнёрской сети, без заявления организаторской роли.</p><a class="timeline-source" href="https://forbes.kz/articles/kak_stat_sovremennyim_nomadom" target="_blank" rel="noopener" data-i18n="historyNomadSource">Публичная информация об экспедиции ↗</a></article>
-            <article class="reveal"><strong>2026</strong><span class="status-tag status-development" data-i18n="statusDevelopment">Текущая разработка</span><h3 data-i18n="dossierTimelineFourTitle">Публичная программа IFA</h3><p data-i18n="dossierTimelineFourText">Формируются маршрутный портфель, раздел полезных материалов и современная модель сотрудничества.</p></article>
-            <article class="dossier-timeline-future reveal"><strong>2027</strong><span class="status-tag status-planned" data-i18n="statusPlanned">Планируемый этап</span><h3 data-i18n="dossierTimelineFiveTitle">Программа Шёлкового пути</h3><p data-i18n="dossierTimelineFiveText">Подготовка международной маршрутной программы через Казахстан обозначена как будущий этап, а не завершённое достижение.</p></article>
+            <article class="reveal">
+              <figure class="dossier-timeline-media"><img src="assets/history-2002-foundation.webp" alt="Учреждение Федерации и работа с уставными документами" width="1440" height="810" loading="lazy" /></figure>
+              <div class="dossier-timeline-content"><strong>2002</strong><span class="status-tag status-confirmed" data-i18n="statusConfirmed">Подтверждённая основа</span><h3 data-i18n="dossierTimelineOneTitle">Учреждение фонда</h3><p data-i18n="dossierTimelineOneText">IFA получает правовую и уставную основу для деятельности в сфере автотуризма.</p></div>
+            </article>
+            <article class="reveal">
+              <figure class="dossier-timeline-media history-card-media-idp"><img src="assets/history-2014-idp-service-ct4.jpeg" alt="Работа сервиса International Drivers Association с международными водительскими документами" width="1206" height="1579" loading="lazy" /></figure>
+              <div class="dossier-timeline-content"><strong>2014</strong><span class="status-tag status-active" data-i18n="statusActive">Действующее направление</span><h3 data-i18n="dossierTimelineTwoTitle">Сервисная модель с IDA</h3><p data-i18n="dossierTimelineTwoText">Практическая работа с международными водительскими документами выстраивается через аккредитованного партнёра.</p></div>
+            </article>
+            <article class="reveal">
+              <figure class="dossier-timeline-media"><img src="assets/history-2014-2025-support.webp" alt="Информационная поддержка международных водителей" width="1440" height="810" loading="lazy" /></figure>
+              <div class="dossier-timeline-content"><strong>2014–2025</strong><span class="status-tag status-active" data-i18n="statusActive">Действующее направление</span><h3 data-i18n="dossierTimelineThreeTitle">Сервисная преемственность</h3><p data-i18n="dossierTimelineThreeText">Поддерживается документальная и информационная работа для водителей через партнёрскую инфраструктуру.</p></div>
+            </article>
+            <article class="reveal">
+              <figure class="dossier-timeline-media"><img src="assets/history-2019-expedition.webp" alt="Партнёрская автомобильная экспедиция по югу Казахстана" width="1440" height="810" loading="lazy" /></figure>
+              <div class="dossier-timeline-content"><strong>2019</strong><span class="status-tag status-participation" data-i18n="statusParticipation">Подтверждённое участие</span><h3 data-i18n="historyNomadTitle">Экспедиция «Легенды Юга»</h3><p data-i18n="historyNomadText">20–27 апреля представители IDA участвовали в экспедиции «Легенды Юга» в рамках сотрудничества с Nomad Explorer. Маршрут прошёл по Жамбылской и Туркестанской областям. Организатором выступила команда Nomad Explorer Маргулана Сейсембаева; в истории IFA эпизод отмечен как опыт партнёрской сети, без заявления организаторской роли.</p><a class="timeline-source" href="https://forbes.kz/articles/kak_stat_sovremennyim_nomadom" target="_blank" rel="noopener" data-i18n="historyNomadSource">Публичная информация об экспедиции ↗</a></div>
+            </article>
+            <article class="reveal">
+              <figure class="dossier-timeline-media history-card-media-gallery">
+                <img src="assets/history-2019-2020-public-space-01.jpeg" alt="Проект благоустройства общественного пространства с павильоном Coffee Shop" width="1206" height="1152" loading="lazy" />
+                <button
+                  class="history-gallery-trigger"
+                  type="button"
+                  data-history-gallery="assets/history-2019-2020-public-space-01.jpeg|assets/history-2019-2020-public-space-02.jpeg|assets/history-2019-2020-public-space-03.png"
+                  data-i18n-label="historyGalleryOpen"
+                  aria-label="Открыть фотогалерею проекта благоустройства"
+                >
+                  <span class="history-gallery-badge" data-i18n="historyGalleryCount">3 фото</span>
+                </button>
+              </figure>
+              <div class="dossier-timeline-content"><strong>2019–2020</strong><span class="status-tag status-active" data-i18n="historyUrbanTag">Городская среда</span><h3 data-i18n="historyUrbanTitle">Благоустройство общественных пространств</h3><p data-i18n="historyUrbanText">Учредители IFA выступали авторами и инициаторами ряда проектов в сфере благоустройства и развития общественных пространств, реализованных совместно с местными исполнительными органами Республики Казахстан. Проекты были направлены на создание комфортной городской среды, модернизацию общественных зон и повышение качества городской инфраструктуры.</p></div>
+            </article>
+            <article class="reveal">
+              <figure class="dossier-timeline-media"><img src="assets/history-2026-programme.webp" alt="Экспертная разработка маршрутной программы IFA" width="1440" height="810" loading="lazy" /></figure>
+              <div class="dossier-timeline-content"><strong>2026</strong><span class="status-tag status-development" data-i18n="statusDevelopment">Текущая разработка</span><h3 data-i18n="dossierTimelineFourTitle">Публичная программа IFA</h3><p data-i18n="dossierTimelineFourText">Формируются маршрутный портфель, раздел полезных материалов и современная модель сотрудничества.</p></div>
+            </article>
+            <article class="dossier-timeline-future reveal">
+              <figure class="dossier-timeline-media"><img src="assets/history-2027-silk-road.webp" alt="Планируемая автомобильная программа Шёлкового пути через Казахстан" width="1440" height="810" loading="lazy" /></figure>
+              <div class="dossier-timeline-content"><strong>2027</strong><span class="status-tag status-planned" data-i18n="statusPlanned">Планируемый этап</span><h3 data-i18n="dossierTimelineFiveTitle">Программа Шёлкового пути</h3><p data-i18n="dossierTimelineFiveText">Подготовка международной маршрутной программы через Казахстан обозначена как будущий этап, а не завершённое достижение.</p></div>
+            </article>
           </div>
         </div>
       </section>

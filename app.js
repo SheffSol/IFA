@@ -12,6 +12,7 @@ const translations = {
     topLeft: "Республика Казахстан · с 2002 года",
     topRight: "Международная мобильность · Автотуризм · Member Services",
     navFederation: "О нас",
+    navMembership: "Вступить в членство",
     navActivities: "Маршруты",
     navHistory: "Этапы",
     navInsights: "Полезное",
@@ -28,16 +29,13 @@ const translations = {
     heroBriefTitle: "Деятельность IFA направлена на установление глобального сообщества автотуристов, где разнообразие культур и географий служит источником взаимопонимания и обмена опытом.",
     aboutOverline: "About IFA",
     aboutTitle: "О нас",
-    aboutLead: "IFA — общественный фонд и некоммерческая организация, деятельность которой официально согласована и зарегистрирована Министерством юстиции Республики Казахстан в 2002 году. В соответствии с Уставом Федерация осуществляет деятельность в сфере развития автотуризма, а также оформления и выдачи международных водительских удостоверений.",
+    aboutLead: "FA — общественный фонд/некоммерческая организация, деятельность которой официально согласована и зарегистрирована Министерством юстиции Республики Казахстан в 2002 году. В соответствии с Уставом Федерация осуществляет деятельность в сфере развития автотуризма, а также оформления и выдачи международных водительских удостоверений.",
     aboutCommunityKicker: "Государственно-экспертное взаимодействие",
     aboutCommunityTitle: "Экспертная позиция IFA в развитии автотуризма",
     aboutCommunityText: "IFA взаимодействует с государственными структурами и отраслевыми организациями по вопросам автомобильной мобильности, водительских документов, пограничных процедур, дорожной безопасности и сервисной инфраструктуры. Федерация консолидирует обращения, готовит официальные запросы и предложения и сопровождает вопросы до получения позиции компетентного органа.",
     aboutLink: "О нас",
     aboutVisualKicker: "Мангистау · Казахстан",
     aboutVisualTitle: "Территория, которую открывает дорога",
-    governmentAgreementLabel: "Действующее соглашение",
-    governmentAgreementTitle: "НАО «Государственная корпорация «Правительство для граждан»",
-    governmentAgreementText: "Соглашение формирует рабочий контур взаимодействия по обслуживанию международных водителей и развитию доступной сервисной инфраструктуры.",
     valueOneTitle: "Официальные обращения",
     valueOneText: "Фиксируем системные вопросы автотуристов, определяем компетентный государственный орган и направляем аргументированный запрос с предлагаемым решением.",
     valueTwoTitle: "Дорожная безопасность",
@@ -81,6 +79,15 @@ const translations = {
     historyNomadTitle: "Экспедиция «Легенды Юга»",
     historyNomadText: "20–27 апреля представители IDA участвовали в экспедиции «Легенды Юга» в рамках сотрудничества с Nomad Explorer. Маршрут прошёл по Жамбылской и Туркестанской областям. Организатором выступила команда Nomad Explorer Маргулана Сейсембаева; в истории IFA эпизод отмечен как опыт партнёрской сети, без заявления организаторской роли.",
     historyNomadSource: "Публичная информация об экспедиции ↗",
+    historyUrbanTag: "Городская среда",
+    historyUrbanTitle: "Благоустройство общественных пространств",
+    historyUrbanText: "Учредители IFA выступали авторами и инициаторами ряда проектов в сфере благоустройства и развития общественных пространств, реализованных совместно с местными исполнительными органами Республики Казахстан. Проекты были направлены на создание комфортной городской среды, модернизацию общественных зон и повышение качества городской инфраструктуры.",
+    historyGalleryOpen: "Открыть фотогалерею проекта благоустройства",
+    historyGalleryCount: "3 фото",
+    historyGalleryTitle: "Благоустройство общественных пространств",
+    historyGalleryClose: "Закрыть фотогалерею",
+    historyGalleryPrevious: "Предыдущее фото",
+    historyGalleryNext: "Следующее фото",
     historyFourTag: "Текущая разработка",
     historyFourTitle: "Публичная программа IFA",
     historyFourText: "Формируются маршрутный портфель, раздел полезных материалов и современная модель сотрудничества.",
@@ -218,6 +225,7 @@ const translations = {
     topLeft: "Republic of Kazakhstan · since 2002",
     topRight: "International mobility · Autotourism · Member Services",
     navFederation: "About IFA",
+    navMembership: "Membership",
     navActivities: "Routes",
     navHistory: "Stages",
     navInsights: "Resources",
@@ -234,16 +242,13 @@ const translations = {
     heroBriefTitle: "IFA works to build a global community of motor travellers, where the diversity of cultures and geographies becomes a source of mutual understanding and shared experience.",
     aboutOverline: "About IFA",
     aboutTitle: "About us",
-    aboutLead: "IFA is a public foundation and non-profit organisation whose activities were officially approved and registered by the Ministry of Justice of the Republic of Kazakhstan in 2002. In accordance with its Charter, the Federation operates in the development of autotourism and in the processing and issuance of International Driving Permits.",
+    aboutLead: "FA is a public foundation/non-profit organisation whose activities were officially approved and registered by the Ministry of Justice of the Republic of Kazakhstan in 2002. In accordance with its Charter, the Federation operates in the development of autotourism and in the processing and issuance of International Driving Permits.",
     aboutCommunityKicker: "Public-sector and expert engagement",
     aboutCommunityTitle: "IFA expertise in developing autotourism",
     aboutCommunityText: "IFA engages with public authorities and sector organisations on automotive mobility, driver documentation, border procedures, road safety and service infrastructure. The Federation consolidates stakeholder submissions, prepares formal requests and proposals, and follows each matter through to a response from the competent authority.",
     aboutLink: "About us",
     aboutVisualKicker: "Mangystau · Kazakhstan",
     aboutVisualTitle: "Territory revealed by the road",
-    governmentAgreementLabel: "Active agreement",
-    governmentAgreementTitle: "NJSC State Corporation Government for Citizens",
-    governmentAgreementText: "The agreement establishes a working framework for serving international drivers and developing accessible service infrastructure.",
     valueOneTitle: "Formal submissions",
     valueOneText: "We document recurring issues faced by motor travellers, identify the competent public authority and submit a reasoned request with a proposed solution.",
     valueTwoTitle: "Road safety",
@@ -287,6 +292,15 @@ const translations = {
     historyNomadTitle: "Legends of the South expedition",
     historyNomadText: "From 20 to 27 April, IDA representatives took part in the Legends of the South expedition through cooperation with Nomad Explorer. The route crossed the Zhambyl and Turkestan regions. Margulan Seisembayev's Nomad Explorer team was the organiser; IFA records the episode as experience within its partner network and does not claim an organising role.",
     historyNomadSource: "Public information about the expedition ↗",
+    historyUrbanTag: "Urban environment",
+    historyUrbanTitle: "Public-space development",
+    historyUrbanText: "IFA's founders acted as authors and initiators of a number of public-space improvement and development projects implemented jointly with local executive bodies of the Republic of Kazakhstan. The projects focused on creating a comfortable urban environment, modernising public areas and improving the quality of urban infrastructure.",
+    historyGalleryOpen: "Open the public-space project gallery",
+    historyGalleryCount: "3 photos",
+    historyGalleryTitle: "Public-space development",
+    historyGalleryClose: "Close photo gallery",
+    historyGalleryPrevious: "Previous photo",
+    historyGalleryNext: "Next photo",
     historyFourTag: "Current development",
     historyFourTitle: "IFA public programme",
     historyFourText: "The route portfolio, resources section and contemporary cooperation model are being developed.",
@@ -456,6 +470,11 @@ function setLanguage(language) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     if (dictionary[key]) element.textContent = dictionary[key];
+  });
+
+  document.querySelectorAll("[data-i18n-label]").forEach((element) => {
+    const key = element.dataset.i18nLabel;
+    if (dictionary[key]) element.setAttribute("aria-label", dictionary[key]);
   });
 
   languageButtons.forEach((button) => {
@@ -820,6 +839,138 @@ document.addEventListener("visibilitychange", () => {
   if (document.hidden) stopRouteAutoplay();
   else scheduleRouteAutoplay();
 });
+
+const historyGalleryTriggers = Array.from(document.querySelectorAll("[data-history-gallery]"));
+
+if (historyGalleryTriggers.length) {
+  const lightbox = document.createElement("div");
+  lightbox.className = "history-lightbox";
+  lightbox.hidden = true;
+  lightbox.setAttribute("role", "dialog");
+  lightbox.setAttribute("aria-modal", "true");
+
+  const lightboxStage = document.createElement("div");
+  lightboxStage.className = "history-lightbox-stage";
+
+  const lightboxImage = document.createElement("img");
+  lightboxImage.className = "history-lightbox-image";
+  lightboxImage.alt = "";
+
+  const lightboxClose = document.createElement("button");
+  lightboxClose.className = "history-lightbox-close";
+  lightboxClose.type = "button";
+  lightboxClose.innerHTML = "<span aria-hidden=\"true\">×</span>";
+
+  const lightboxPrevious = document.createElement("button");
+  lightboxPrevious.className = "history-lightbox-nav history-lightbox-previous";
+  lightboxPrevious.type = "button";
+  lightboxPrevious.innerHTML = "<span aria-hidden=\"true\">←</span>";
+
+  const lightboxNext = document.createElement("button");
+  lightboxNext.className = "history-lightbox-nav history-lightbox-next";
+  lightboxNext.type = "button";
+  lightboxNext.innerHTML = "<span aria-hidden=\"true\">→</span>";
+
+  const lightboxFooter = document.createElement("div");
+  lightboxFooter.className = "history-lightbox-footer";
+
+  const lightboxTitle = document.createElement("strong");
+  const lightboxCounter = document.createElement("span");
+
+  lightboxFooter.append(lightboxTitle, lightboxCounter);
+  lightboxStage.append(lightboxImage, lightboxClose, lightboxPrevious, lightboxNext, lightboxFooter);
+  lightbox.append(lightboxStage);
+  document.body.append(lightbox);
+
+  let galleryImages = [];
+  let galleryIndex = 0;
+  let galleryTrigger = null;
+  let galleryTouchStartX = 0;
+  let galleryTouchStartY = 0;
+
+  function updateHistoryLightbox() {
+    const dictionary = translations[currentLanguage];
+    const source = galleryImages[galleryIndex];
+    if (!source) return;
+
+    lightboxImage.src = source;
+    lightboxImage.alt = `${dictionary.historyGalleryTitle}. ${galleryIndex + 1} / ${galleryImages.length}`;
+    lightboxTitle.textContent = dictionary.historyGalleryTitle;
+    lightboxCounter.textContent = `${String(galleryIndex + 1).padStart(2, "0")} / ${String(galleryImages.length).padStart(2, "0")}`;
+    lightbox.setAttribute("aria-label", dictionary.historyGalleryTitle);
+    lightboxClose.setAttribute("aria-label", dictionary.historyGalleryClose);
+    lightboxPrevious.setAttribute("aria-label", dictionary.historyGalleryPrevious);
+    lightboxNext.setAttribute("aria-label", dictionary.historyGalleryNext);
+  }
+
+  function showHistoryGalleryImage(direction) {
+    if (!galleryImages.length) return;
+    galleryIndex = (galleryIndex + direction + galleryImages.length) % galleryImages.length;
+    updateHistoryLightbox();
+  }
+
+  function openHistoryGallery(trigger) {
+    galleryImages = String(trigger.dataset.historyGallery || "").split("|").filter(Boolean);
+    if (!galleryImages.length) return;
+    galleryIndex = 0;
+    galleryTrigger = trigger;
+    updateHistoryLightbox();
+    lightbox.hidden = false;
+    document.body.classList.add("history-lightbox-open");
+    lightboxClose.focus({ preventScroll: true });
+  }
+
+  function closeHistoryGallery() {
+    if (lightbox.hidden) return;
+    lightbox.hidden = true;
+    lightboxImage.removeAttribute("src");
+    document.body.classList.remove("history-lightbox-open");
+    galleryTrigger?.focus({ preventScroll: true });
+    galleryTrigger = null;
+  }
+
+  historyGalleryTriggers.forEach((trigger) => {
+    trigger.addEventListener("pointerdown", (event) => event.stopPropagation());
+    trigger.addEventListener("click", () => openHistoryGallery(trigger));
+  });
+
+  lightboxClose.addEventListener("click", closeHistoryGallery);
+  lightboxPrevious.addEventListener("click", () => showHistoryGalleryImage(-1));
+  lightboxNext.addEventListener("click", () => showHistoryGalleryImage(1));
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeHistoryGallery();
+  });
+
+  lightboxStage.addEventListener("touchstart", (event) => {
+    const touch = event.changedTouches[0];
+    galleryTouchStartX = touch.clientX;
+    galleryTouchStartY = touch.clientY;
+  }, { passive: true });
+
+  lightboxStage.addEventListener("touchend", (event) => {
+    const touch = event.changedTouches[0];
+    const distanceX = touch.clientX - galleryTouchStartX;
+    const distanceY = touch.clientY - galleryTouchStartY;
+    if (Math.abs(distanceX) < 45 || Math.abs(distanceX) <= Math.abs(distanceY)) return;
+    showHistoryGalleryImage(distanceX < 0 ? 1 : -1);
+  }, { passive: true });
+
+  document.addEventListener("keydown", (event) => {
+    if (lightbox.hidden) return;
+    if (event.key === "Escape") closeHistoryGallery();
+    if (event.key === "ArrowLeft") showHistoryGalleryImage(-1);
+    if (event.key === "ArrowRight") showHistoryGalleryImage(1);
+    if (event.key === "Tab") {
+      const controls = [lightboxClose, lightboxPrevious, lightboxNext];
+      const currentIndex = controls.indexOf(document.activeElement);
+      const nextIndex = event.shiftKey
+        ? (currentIndex - 1 + controls.length) % controls.length
+        : (currentIndex + 1) % controls.length;
+      event.preventDefault();
+      controls[nextIndex].focus();
+    }
+  });
+}
 
 const inquiryForm = document.querySelector(".inquiry-form");
 const formStatus = document.querySelector(".form-status");
