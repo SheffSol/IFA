@@ -1,0 +1,19 @@
+# Local and deployment metadata
+.vercel/
+.agents/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings and temporary files
+.idea/
+.vscode/
+*.log
+*.tmp
+*.zip
+
+# Local and production secrets
+.env
+.env.local
+.env.*
+!.env.example

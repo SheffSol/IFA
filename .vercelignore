@@ -1,0 +1,12 @@
+.git
+.agents
+.vercel
+.env
+.env.local
+.env.*
+README.md
+*.zip
+*.docx
+*.log
+Thumbs.db
+Desktop.ini
