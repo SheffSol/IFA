@@ -18,6 +18,11 @@ const translations = {
     navInsights: "Полезное",
     navIdpDepartment: "Департамент выдачи МВУ",
     navJoin: "Вступить",
+    mobileNavTitle: "Навигация",
+    mobileNavLanguage: "Язык сайта",
+    mobileNavCountry: "Казахстан · с 2002 года",
+    menuOpen: "Открыть меню",
+    menuClose: "Закрыть меню",
     dropAbout: "О нас",
     dropHistory: "История IFA",
     dropRoutes: "Международные маршруты",
@@ -231,6 +236,11 @@ const translations = {
     navInsights: "Resources",
     navIdpDepartment: "IDP Issuing Department",
     navJoin: "Join",
+    mobileNavTitle: "Navigation",
+    mobileNavLanguage: "Site language",
+    mobileNavCountry: "Kazakhstan · Since 2002",
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
     dropAbout: "About us",
     dropHistory: "IFA history",
     dropRoutes: "International routes",
@@ -430,10 +440,14 @@ const translations = {
 const header = document.querySelector(".site-header");
 const menuButton = document.querySelector(".menu-button");
 const mainNav = document.querySelector(".main-nav");
+const navBackdrop = document.querySelector(".nav-backdrop");
 const languageButtons = document.querySelectorAll(".lang-button");
 const metaDescription = document.querySelector('meta[name="description"]');
+const mobileMenuMedia = window.matchMedia("(max-width: 940px)");
 
 let currentLanguage = "ru";
+let menuScrollPosition = 0;
+let menuReturnFocus = null;
 
 function getSavedLanguage() {
   try {
@@ -483,30 +497,135 @@ function setLanguage(language) {
     button.setAttribute("aria-pressed", String(active));
   });
 
+  if (menuButton) {
+    const menuOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-label", menuOpen ? dictionary.menuClose : dictionary.menuOpen);
+  }
+
   saveLanguage(currentLanguage);
 }
 
 languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
 setLanguage(getSavedLanguage() || "ru");
 
-function closeMenu() {
+function menuIsOpen() {
+  return menuButton?.getAttribute("aria-expanded") === "true";
+}
+
+function updateMenuAccessibility() {
+  const mobile = mobileMenuMedia.matches;
+  const open = menuIsOpen();
+
+  if (mainNav) {
+    mainNav.setAttribute("aria-hidden", String(mobile && !open));
+    if ("inert" in mainNav) mainNav.inert = mobile && !open;
+  }
+
+  navBackdrop?.setAttribute("aria-hidden", String(!open));
+  if (menuButton) {
+    const dictionary = translations[currentLanguage] || translations.ru;
+    menuButton.setAttribute("aria-label", open ? dictionary.menuClose : dictionary.menuOpen);
+  }
+}
+
+function lockMenuScroll() {
+  menuScrollPosition = window.scrollY;
+  document.body.style.top = `-${menuScrollPosition}px`;
+  document.body.classList.add("menu-open");
+}
+
+function unlockMenuScroll() {
+  if (!document.body.classList.contains("menu-open")) return;
+  document.body.classList.remove("menu-open");
+  document.body.style.top = "";
+  window.scrollTo(0, menuScrollPosition);
+}
+
+function openMenu() {
+  if (!menuButton || !mainNav || !mobileMenuMedia.matches || menuIsOpen()) return;
+
+  menuReturnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : menuButton;
+  menuButton.setAttribute("aria-expanded", "true");
+  mainNav.classList.add("is-open");
+  navBackdrop?.classList.add("is-open");
+  lockMenuScroll();
+  updateMenuAccessibility();
+
+  requestAnimationFrame(() => {
+    mainNav.querySelector("a, button")?.focus({ preventScroll: true });
+  });
+}
+
+function closeMenu({ returnFocus = true } = {}) {
+  const wasOpen = menuIsOpen();
+
   menuButton?.setAttribute("aria-expanded", "false");
   mainNav?.classList.remove("is-open");
-  document.body.classList.remove("menu-open");
+  navBackdrop?.classList.remove("is-open");
+  unlockMenuScroll();
   document.querySelectorAll(".nav-group.is-open").forEach((group) => {
     group.classList.remove("is-open");
     group.querySelector(".nav-expand")?.setAttribute("aria-expanded", "false");
   });
+  updateMenuAccessibility();
+
+  if (wasOpen && returnFocus) {
+    const target = menuReturnFocus?.isConnected ? menuReturnFocus : menuButton;
+    requestAnimationFrame(() => target?.focus({ preventScroll: true }));
+  }
+
+  menuReturnFocus = null;
 }
 
 menuButton?.addEventListener("click", () => {
-  const open = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", String(!open));
-  mainNav.classList.toggle("is-open", !open);
-  document.body.classList.toggle("menu-open", !open);
+  if (menuIsOpen()) closeMenu();
+  else openMenu();
 });
 
-mainNav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+navBackdrop?.addEventListener("click", () => closeMenu());
+mainNav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => closeMenu({ returnFocus: false })));
+
+document.addEventListener("keydown", (event) => {
+  if (!menuIsOpen()) return;
+
+  if (event.key === "Escape") {
+    event.preventDefault();
+    closeMenu();
+    return;
+  }
+
+  if (event.key !== "Tab" || !mainNav || !menuButton) return;
+
+  const focusable = [...mainNav.querySelectorAll("a[href], button:not([disabled])"), menuButton]
+    .filter((element) => element instanceof HTMLElement && !element.hidden && element.getAttribute("aria-hidden") !== "true");
+
+  if (!focusable.length) return;
+
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+});
+
+function syncMenuMode() {
+  if (!mobileMenuMedia.matches && menuIsOpen()) closeMenu({ returnFocus: false });
+  updateMenuAccessibility();
+}
+
+if (typeof mobileMenuMedia.addEventListener === "function") {
+  mobileMenuMedia.addEventListener("change", syncMenuMode);
+} else {
+  mobileMenuMedia.addListener(syncMenuMode);
+}
+
+window.addEventListener("pageshow", () => closeMenu({ returnFocus: false }));
+syncMenuMode();
 
 document.querySelectorAll(".nav-expand").forEach((button) => {
   button.addEventListener("click", () => {

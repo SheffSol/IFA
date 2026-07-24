@@ -65,10 +65,10 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=14" />
+    <link rel="stylesheet" href="styles.css?v=15" />
     <link rel="stylesheet" href="idp-department.css?v=11" />
     <script src="navigation.js" defer></script>
-    <script src="app.js?v=15" defer></script>
+    <script src="app.js?v=16" defer></script>
   </head>
   <body class="idp-page" data-page="idp">
     <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержанию</a>
@@ -81,9 +81,18 @@
         </a>
 
         <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+          <p class="mobile-nav-heading" data-i18n="mobileNavTitle">Навигация</p>
           <a href="about.html" data-i18n="navFederation">О нас</a>
           <a href="cooperation.html" data-i18n="navMembership">Вступить в членство</a>
           <a href="idp-department.html" aria-current="page" data-i18n="navIdpDepartment">Департамент выдачи МВУ</a>
+          <div class="mobile-nav-footer">
+            <span class="mobile-nav-caption" data-i18n="mobileNavLanguage">Язык сайта</span>
+            <div class="language-switch mobile-language-switch" aria-label="Выбор языка">
+              <button class="lang-button is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
+              <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <small data-i18n="mobileNavCountry">Казахстан · с 2002 года</small>
+          </div>
         </nav>
 
         <div class="nav-actions">
@@ -91,9 +100,10 @@
             <button class="lang-button is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
             <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
           </div>
-          <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+          <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav" data-i18n-label="menuOpen"><span></span><span></span></button>
         </div>
       </div>
+      <button class="nav-backdrop" type="button" tabindex="-1" aria-hidden="true" aria-label="Закрыть меню" data-i18n-label="menuClose"></button>
     </header>
 
     <main id="main">
