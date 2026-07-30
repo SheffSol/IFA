@@ -112,8 +112,10 @@
       }
     </script>
     <link rel="stylesheet" href="styles.css?v=16" />
+    <link rel="stylesheet" href="great-journey.css?v=6" />
     <script src="navigation.js" defer></script>
-    <script src="app.js?v=16" defer></script>
+    <script src="app.js?v=18" defer></script>
+    <script src="great-journey.js?v=4" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержанию</a>
@@ -220,6 +222,79 @@
             <article class="value-card reveal"><figure class="value-visual"><img src="assets/value-infrastructure.webp" alt="Инфраструктура автомобильного туризма в Казахстане" loading="lazy" /></figure><div class="value-copy"><h4 data-i18n="valueFiveTitle">Инфраструктура автотуризма</h4><p data-i18n="valueFiveText">Выносим на рассмотрение вопросы навигации, сервисных точек, остановок, экстренной помощи и доступности маршрутов, добиваясь их включения в рабочую повестку.</p></div></article>
           </div>
 
+        </div>
+      </section>
+
+      <section class="great-journey-feature" id="great-journey" aria-labelledby="great-journey-feature-title">
+        <img
+          class="great-journey-feature-media"
+          src="assets/almaty-city-landscape.webp"
+          srcset="assets/almaty-city-landscape-1200.webp 1200w, assets/almaty-city-landscape.webp 2400w"
+          sizes="100vw"
+          alt="Панорама современного Алматы"
+          width="2400"
+          height="1590"
+          loading="lazy"
+        />
+        <div class="great-journey-feature-overlay"></div>
+        <div class="great-journey-feature-grid" aria-hidden="true"></div>
+        <svg class="great-journey-route-trace" viewBox="0 0 960 360" aria-hidden="true">
+          <path d="M24 304C162 269 215 315 319 247C432 173 470 228 577 158C684 89 753 123 936 40"></path>
+          <circle cx="24" cy="304" r="4"></circle>
+          <circle cx="577" cy="158" r="4"></circle>
+          <circle cx="936" cy="40" r="4"></circle>
+        </svg>
+
+        <div class="container great-journey-feature-inner">
+          <div class="great-journey-feature-copy reveal">
+            <h2 id="great-journey-feature-title">
+              <span>KAZAKHSTAN:</span>
+              <strong>THE GREAT JOURNEY</strong>
+            </h2>
+            <p class="great-journey-feature-subtitle" data-i18n="journeyFeatureSubtitle">Премиальный автомобильный гид по современному Казахстану</p>
+            <p class="great-journey-feature-lead" data-i18n="journeyFeatureLead">Архитектура, культурное наследие, общественные пространства, инфраструктура и маршруты формируют международный образ современной страны, который открывается в автомобильном путешествии.</p>
+            <div class="great-journey-feature-actions">
+              <a class="button button-gold" href="great-journey.html" data-i18n="journeyFeaturePrimary">О проекте</a>
+              <a class="button great-journey-button-ghost" href="cooperation.html#application" data-i18n="journeyFeatureSecondary">Стать партнёром проекта</a>
+            </div>
+          </div>
+
+          <figure class="atlas-stage atlas-stage--feature reveal" data-atlas-stage>
+            <div class="atlas-scene">
+              <div class="atlas-book" data-atlas-book aria-hidden="true">
+                <div class="atlas-book-pages"></div>
+                <div class="atlas-book-spreads" data-atlas-spreads></div>
+                <div class="atlas-book-cover">
+                  <img class="atlas-cover-art" src="assets/cover-book.webp" alt="" width="960" height="1600" loading="lazy" />
+                  <span class="atlas-cover-shade"></span>
+                  <span class="atlas-cover-frame"></span>
+                  <img class="atlas-cover-logo" src="assets/ifa-logo-final-3.png" alt="" />
+                  <span class="atlas-cover-series">INTERNATIONAL FEDERATION OF AUTOTOURISM</span>
+                  <span class="atlas-cover-country">KAZAKHSTAN</span>
+                  <strong class="atlas-cover-title">THE GREAT<br />JOURNEY</strong>
+                  <span class="atlas-cover-edition">THE ROAD GUIDE TO MODERN KAZAKHSTAN</span>
+                  <svg class="atlas-cover-route" viewBox="0 0 240 90" aria-hidden="true">
+                    <path d="M4 80C48 57 62 78 94 49C127 20 143 49 174 24C192 9 208 14 236 3"></path>
+                    <circle cx="4" cy="80" r="3"></circle><circle cx="174" cy="24" r="3"></circle><circle cx="236" cy="3" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="atlas-book-spine"><span>IFA · KAZAKHSTAN</span></div>
+              </div>
+              <button class="atlas-book-toggle" type="button" data-atlas-toggle aria-pressed="false">
+                <span class="atlas-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+                <span class="atlas-toggle-label" data-ru-open="Открыть гид" data-ru-close="Закрыть гид" data-en-open="Open the guide" data-en-close="Close the guide">Открыть гид</span>
+              </button>
+            </div>
+            <figcaption>
+              <span>KAZAKHSTAN · NATIONAL COVERAGE</span>
+              <strong data-i18n="journeyFeatureScope">Страна · Архитектура · Культура · Автомаршруты</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="great-journey-feature-foot">
+          <span>43°14′N · 76°57′E</span>
+          <span data-i18n="journeyFeatureFoot">Современный Казахстан — территория за территорией, маршрут за маршрутом</span>
         </div>
       </section>
 
