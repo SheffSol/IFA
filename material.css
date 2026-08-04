@@ -11,6 +11,8 @@
 }
 
 .material-header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 92px; }
+.material-header-actions { display: flex; gap: 20px; align-items: center; }
+.material-language-switch { flex: 0 0 auto; }
 .material-back { display: inline-flex; gap: 10px; align-items: center; color: rgba(255,255,255,0.72); font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
 .material-back:hover { color: var(--white); }
 .material-back i { color: var(--champagne); font-size: 17px; font-style: normal; }
@@ -102,6 +104,9 @@
 @media (max-width: 640px) {
   .material-header-inner { min-height: 70px; }
   .material-header .brand { width: max-content; }
+  .material-header .brand-copy { display: none; }
+  .material-header .brand-emblem { width: 54px; height: 54px; flex-basis: 54px; }
+  .material-header-actions { gap: 10px; }
   .material-back { font-size: 0; }
   .material-back i { font-size: 20px; }
   .material-hero-copy { min-height: 560px; padding: 70px 18px; }
