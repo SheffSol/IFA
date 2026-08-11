@@ -166,10 +166,13 @@ const translations = {
     partnerTourism: "ТУРИЗМ И МОБИЛЬНОСТЬ",
     insightsOverline: "Research & briefings",
     insightsTitle: "Полезное",
+    insightsViewAll: "Открыть все",
+    resourcesPageTitle: "Полезное для автотуристов в Казахстане — IFA",
+    resourcesPageDescription: "Официальные разъяснения и практические материалы IFA для водителей и автотуристов в Казахстане.",
     insightOneType: "Стратегический обзор",
     insightOneTitle: "Как Казахстан может стать опорной территорией автомобильного Шёлкового пути",
-    insightTwoType: "Методология IFA",
-    insightTwoTitle: "Как оценивается готовность международного автомобильного маршрута",
+    insightTwoType: "Памятка автотуристу",
+    insightTwoTitle: "Памятка водителю и автотуристу в Казахстане",
     insightThreeType: "МВУ · Mobility briefing",
     insightThreeTitle: "Международный водитель: МВУ, документы, подготовка и ответственность",
     insightRead: "Подробнее →",
@@ -444,10 +447,13 @@ const translations = {
     partnerTourism: "TOURISM & MOBILITY",
     insightsOverline: "Research & briefings",
     insightsTitle: "Resources",
+    insightsViewAll: "View all resources",
+    resourcesPageTitle: "Practical resources for motorists in Kazakhstan — IFA",
+    resourcesPageDescription: "Official explanations and practical IFA resources for drivers and motor travellers in Kazakhstan.",
     insightOneType: "Strategic review",
     insightOneTitle: "How Kazakhstan can become an anchor territory for Silk Road motor travel",
-    insightTwoType: "IFA methodology",
-    insightTwoTitle: "How readiness for an international motor route is assessed",
+    insightTwoType: "Motor-travel checklist",
+    insightTwoTitle: "Driver and motor-tourist checklist for Kazakhstan",
     insightThreeType: "IDP · Mobility briefing",
     insightThreeTitle: "The international driver: IDP, documents, preparation and responsibility",
     insightRead: "Read more →",
@@ -563,7 +569,7 @@ const mainNav = document.querySelector(".main-nav");
 const navBackdrop = document.querySelector(".nav-backdrop");
 const languageButtons = document.querySelectorAll(".lang-button");
 const metaDescription = document.querySelector('meta[name="description"]');
-const mobileMenuMedia = window.matchMedia("(max-width: 940px)");
+const mobileMenuMedia = window.matchMedia("(max-width: 1040px)");
 
 let currentLanguage = "ru";
 let menuScrollPosition = 0;
@@ -596,6 +602,7 @@ function setLanguage(language) {
     about: [dictionary.aboutPageTitle, dictionary.aboutPageDescription],
     idp: [dictionary.idpPageTitle, dictionary.idpPageDescription],
     journey: [dictionary.journeyPageTitle, dictionary.journeyPageDescription],
+    resources: [dictionary.resourcesPageTitle, dictionary.resourcesPageDescription],
     home: [dictionary.pageTitle, dictionary.pageDescription],
   };
   const [pageTitle, pageDescription] = pageMeta[page] || pageMeta.home;
