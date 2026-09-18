@@ -12,13 +12,13 @@
   "categories": ["travel", "automotive"],
   "icons": [
     {
-      "src": "/assets/ifa-favicon.png",
+      "src": "/assets/ifa-favicon-2026.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/ifa-logo-final-3.png",
+      "src": "/assets/ifa-logo-2026.png",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"
