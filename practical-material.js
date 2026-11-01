@@ -9,10 +9,10 @@
   const ogDescription = document.querySelector('meta[property="og:description"]');
 
   function setLanguage(language) {
-    const lang = language === "en" ? "en" : "ru";
+    const lang = ['ru', 'en', 'kk'].includes(language) ? language : 'ru';
     localStorage.setItem("ifa-language", lang);
     root.lang = lang;
-    blocks.forEach((block) => { block.hidden = block.dataset.languageContent !== lang; });
+    blocks.forEach((block) => { block.hidden = block.dataset.languageContent !== (lang === 'kk' ? 'ru' : lang); });
     shared.forEach((node) => { node.textContent = lang === "en" ? node.dataset.sharedEn : node.dataset.sharedRu; });
     buttons.forEach((button) => {
       const active = button.dataset.lang === lang;

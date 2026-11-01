@@ -11,4 +11,8 @@ README.md
 Thumbs.db
 Desktop.ini
 outputs/
+tmp/
+docs/
+scripts/
+.codex-preview/
 Парковки.png

@@ -11,6 +11,8 @@ Desktop.ini
 *.log
 *.tmp
 *.zip
+tmp/
+.codex-preview/
 
 # Local and production secrets
 .env

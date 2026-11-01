@@ -94,7 +94,7 @@
             "publisher": {
               "@id": "https://ifa.org.kz/#organization"
             },
-            "inLanguage": ["ru", "en"]
+            "inLanguage":["ru","en","kk"]
           },
           {
             "@type": "WebPage",
@@ -114,10 +114,14 @@
     </script>
     <link rel="stylesheet" href="styles.css?v=16" />
     <link rel="stylesheet" href="great-journey.css?v=6" />
-    <script src="navigation.js" defer></script>
+    <script src="locale-data.js?v=1" defer></script>
+<script src="navigation.js" defer></script>
     <script src="app.js?v=19" defer></script>
     <script src="great-journey.js?v=4" defer></script>
-  </head>
+  <link rel="stylesheet" href="institutional.css?v=1" />
+<script src="site-language.js?v=1" defer></script>
+<link rel="alternate" hreflang="ru" href="https://ifa.org.kz/" /><link rel="alternate" hreflang="en" href="https://ifa.org.kz/?lang=en" /><link rel="alternate" hreflang="kk" href="https://ifa.org.kz/?lang=kk" /><link rel="alternate" hreflang="x-default" href="https://ifa.org.kz/" />
+</head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержанию</a>
 
@@ -138,11 +142,11 @@
           <a href="idp-department.html" data-i18n="navIdpDepartment">Департамент выдачи МВУ</a>
           <a href="great-journey.html" data-i18n="navAutotourismGuide">Гид Автотуризма</a>
           <a href="resources.html" data-i18n="navInsights">Полезное</a>
-          <div class="mobile-nav-footer">
+          <a data-site-ru="Документы и реестр" data-site-en="Documents &amp; register" data-site-kk="Құжаттар мен тізілім" href="documents.html" >Документы и реестр</a><div class="mobile-nav-footer">
             <span class="mobile-nav-caption" data-i18n="mobileNavLanguage">Язык сайта</span>
             <div class="language-switch mobile-language-switch" aria-label="Выбор языка">
               <button class="lang-button is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
-              <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+              <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button><button class="lang-button" type="button" data-lang="kk" aria-pressed="false">KZ</button>
             </div>
             <small data-i18n="mobileNavCountry">Казахстан · с 2002 года</small>
           </div>
@@ -151,7 +155,7 @@
         <div class="nav-actions">
           <div class="language-switch" aria-label="Выбор языка">
             <button class="lang-button is-active" type="button" data-lang="ru" aria-pressed="true">RU</button>
-            <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+            <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button><button class="lang-button" type="button" data-lang="kk" aria-pressed="false">KZ</button>
           </div>
           <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav" data-i18n-label="menuOpen">
             <span></span><span></span>
@@ -196,7 +200,7 @@
             </div>
             <div class="about-heading-copy">
               <h2 id="about-title" data-i18n="aboutTitle">О нас</h2>
-              <p class="executive-lead" data-i18n="aboutLead">IFA — общественный фонд/некоммерческая организация, деятельность которой официально согласована и зарегистрирована Министерством юстиции Республики Казахстан в 2002 году. В соответствии с Уставом Федерация осуществляет деятельность в сфере развития автотуризма, а также оформления и выдачи международных водительских удостоверений.</p>
+              <p class="executive-lead" data-i18n="aboutLead">IFA — общественный фонд «INTERNATIONAL FEDERATION OF AUTOTOURISM», зарегистрированный 21 марта 2002 года Департаментом юстиции города Алматы. Федерация развивает автотуризм и международное сотрудничество. Согласно сертификату IFA № 2012-23779-001, International Drivers Association уполномочена оформлять и выдавать международные водительские удостоверения на территории стран Евразии и региона MENA.</p>
             </div>
           </div>
 
@@ -301,7 +305,8 @@
         </div>
       </section>
 
-      <section class="section routes" id="routes" aria-labelledby="routes-title">
+      <section class="institution-section geography-section" aria-labelledby="geography-title"><div class="container"><p data-site-ru="Международная деятельность" data-site-en="International presence" data-site-kk="Халықаралық қызмет" class="overline">Международная деятельность</p><h2 data-site-ru="Где мы работаем" data-site-en="Where we work" data-site-kk="Біз қайда жұмыс істейміз" id="geography-title">Где мы работаем</h2><p data-site-ru="Головная организация IFA находится в Алматы. Территория оформления и выдачи международных водительских удостоверений организацией IDA по сертификату IFA — страны Евразии и регион MENA. Деятельность IFA в ОАЭ осуществляется через IFA International Auto-Tourism Service L.L.C-FZ." data-site-en="IFA’s head organisation is based in Almaty. Under its IFA certificate, IDA processes and issues International Driving Permits within Eurasian countries and the MENA region. IFA’s activities in the UAE are carried out through IFA International Auto-Tourism Service L.L.C-FZ." data-site-kk="IFA бас ұйымы Алматыда орналасқан. IFA сертификатына сәйкес IDA ұйымының халықаралық жүргізуші куәліктерін ресімдеу және беру аумағы — Еуразия елдері мен MENA өңірі. IFA-ның БАӘ-дегі қызметі IFA International Auto-Tourism Service L.L.C-FZ арқылы жүзеге асырылады." class="institution-lead">Головная организация IFA находится в Алматы. Территория оформления и выдачи международных водительских удостоверений организацией IDA по сертификату IFA — страны Евразии и регион MENA. Деятельность IFA в ОАЭ осуществляется через IFA International Auto-Tourism Service L.L.C-FZ.</p><div class="geography-grid"><article><span class="institution-country">KZ</span><h3 data-site-ru="Казахстан · Алматы" data-site-en="Kazakhstan · Almaty" data-site-kk="Қазақстан · Алматы" >Казахстан · Алматы</h3><p data-site-ru="Головная организация IFA: развитие автотуризма, международное сотрудничество и сертификация организаций в сфере международных водительских документов." data-site-en="IFA head organisation: autotourism development, international cooperation and certification of organisations working with international driving documents." data-site-kk="IFA бас ұйымы: автотуризмді дамыту, халықаралық ынтымақтастық және халықаралық жүргізуші құжаттары саласындағы ұйымдарды сертификаттау." >Головная организация IFA: развитие автотуризма, международное сотрудничество и сертификация организаций в сфере международных водительских документов.</p><a data-site-ru="Документы и реестр" data-site-en="Documents &amp; register" data-site-kk="Құжаттар мен тізілім" href="documents.html" >Документы и реестр</a></article><article><span class="institution-country">AE</span><h3 data-site-ru="ОАЭ · Дубай" data-site-en="UAE · Dubai" data-site-kk="БАӘ · Дубай" >ОАЭ · Дубай</h3><p data-site-ru="Деятельность IFA в Объединённых Арабских Эмиратах осуществляется через компанию IFA International Auto-Tourism Service L.L.C-FZ. Автотуризм, членство, маршрутные инициативы и международные партнёрства." data-site-en="The Federation’s activities in the United Arab Emirates are conducted through IFA International Auto-Tourism Service L.L.C-FZ. Autotourism, membership, route initiatives and international partnerships." data-site-kk="Федерацияның Біріккен Араб Әмірліктеріндегі қызметі IFA International Auto-Tourism Service L.L.C-FZ арқылы жүзеге асырылады. Автотуризм, мүшелік, маршруттық бастамалар және халықаралық әріптестік." >Деятельность IFA в Объединённых Арабских Эмиратах осуществляется через компанию IFA International Auto-Tourism Service L.L.C-FZ. Автотуризм, членство, маршрутные инициативы и международные партнёрства.</p><a data-site-ru="IFA в Объединённых Арабских Эмиратах" data-site-en="IFA in the United Arab Emirates" data-site-kk="IFA Біріккен Араб Әмірліктерінде" href="https://ifa-org.ae/" target="_blank" rel="noopener">IFA в Объединённых Арабских Эмиратах</a></article></div></div></section>
+<section class="section routes" id="routes" aria-labelledby="routes-title">
         <div class="container">
           <div class="routes-heading reveal">
             <div>
@@ -405,7 +410,7 @@
             </article>
             <article class="history-card reveal">
               <figure class="history-card-media history-card-media-idp"><img src="assets/history-2014-idp-service-ct4.jpeg" alt="Работа сервиса International Drivers Association с международными водительскими документами" width="1206" height="1579" loading="lazy" /></figure>
-              <div class="history-card-body"><div class="history-card-meta"><strong>2014</strong><span data-i18n="historyTwoTag">Действующее направление</span></div><h3 data-i18n="historyTwoTitle">Сервисная модель с IDA</h3><p data-i18n="historyTwoText">Практическая работа с международными водительскими документами выстраивается через аккредитованного партнёра.</p></div>
+              <div class="history-card-body"><div class="history-card-meta"><strong>2014</strong><span data-i18n="historyTwoTag">Действующее направление</span></div><h3 data-i18n="historyTwoTitle">Сервисная модель с IDA</h3><p data-i18n="historyTwoText">Практическая работа с международными водительскими документами выстраивается через сертифицированную IFA организацию.</p></div>
             </article>
             <article class="history-card reveal">
               <figure class="history-card-media"><img src="assets/history-2014-2025-support.webp" alt="Информационная поддержка международных водителей" width="1440" height="810" loading="lazy" /></figure>
@@ -485,14 +490,14 @@
     <footer class="site-footer">
       <div class="container footer-main">
         <div class="footer-brand">
-          <a class="brand brand-lockup" href="#top" aria-label="IFA — главная"><span class="brand-emblem" aria-hidden="true"><img src="assets/ifa-logo-2026.webp" alt="" width="640" height="640" /></span><span class="brand-copy" aria-hidden="true"><strong><span>International Federation</span><span>of Autotourism</span></strong><small>Kazakhstan since 2002</small></span></a>
+          <a class="brand brand-lockup" href="index.html" aria-label="IFA — главная"><span class="brand-emblem" aria-hidden="true"><img src="assets/ifa-logo-2026.webp" alt="" width="640" height="640" /></span><span class="brand-copy" aria-hidden="true"><strong><span>International Federation</span><span>of Autotourism</span></strong><small>Kazakhstan since 2002</small></span></a>
           <p data-i18n="footerDescription">Международная Федерация Автотуризма учреждена в Казахстане в 2002 году и развивает практическую инфраструктуру для автомобильных путешествий.</p>
         </div>
-        <div class="footer-column"><strong data-i18n="footerFederation">Федерация</strong><a href="about.html" data-i18n="dropAbout">О нас</a><a href="#history" data-i18n="dropHistory">История IFA</a></div>
-        <div class="footer-column"><strong data-i18n="footerActivities">Маршруты</strong><a href="#routes" data-i18n="dropRoutes">Международные маршруты</a><a href="resources.html" data-i18n="navInsights">Полезное</a><a href="idp-department.html" data-i18n="navIdpDepartment">Департамент выдачи МВУ</a></div>
+        <div class="footer-column"><strong data-i18n="footerFederation">Федерация</strong><a data-site-ru="Документы и реестр" data-site-en="Documents &amp; register" data-site-kk="Құжаттар мен тізілім" href="documents.html" >Документы и реестр</a><a href="about.html" data-i18n="dropAbout">О нас</a><a href="index.html#history" data-i18n="dropHistory">История IFA</a></div>
+        <div class="footer-column"><strong data-i18n="footerActivities">Маршруты</strong><a href="index.html#routes" data-i18n="dropRoutes">Международные маршруты</a><a href="resources.html" data-i18n="navInsights">Полезное</a><a href="idp-department.html" data-i18n="navIdpDepartment">Департамент выдачи МВУ</a></div>
         <div class="footer-column footer-contact"><strong data-i18n="footerInformation">Контакты</strong><a class="footer-email" href="mailto:directorate@ifa.org.kz">directorate@ifa.org.kz</a><a class="footer-phone" href="tel:+77011883333">+7 701 188 3333</a></div>
       </div>
-      <div class="container footer-legal"><span>© <span id="year">2026</span> IFA</span><span data-i18n="footerCountry">Республика Казахстан</span><span data-i18n="footerSince">С 2002 года</span></div>
+      <div class="container organisation-details"><div><strong data-site-ru="Общественный фонд «INTERNATIONAL FEDERATION OF AUTOTOURISM»" data-site-en="Public Foundation “INTERNATIONAL FEDERATION OF AUTOTOURISM”" data-site-kk="«INTERNATIONAL FEDERATION OF AUTOTOURISM» қоғамдық қоры" >Общественный фонд «INTERNATIONAL FEDERATION OF AUTOTOURISM»</strong><p data-site-ru="Зарегистрирован 21 марта 2002 года. Регистрирующий орган — Департамент юстиции города Алматы." data-site-en="Registered on 21 March 2002. Registration authority: Almaty City Department of Justice." data-site-kk="2002 жылғы 21 наурызда тіркелген. Тіркеуші орган — Алматы қаласының Әділет департаменті." >Зарегистрирован 21 марта 2002 года. Регистрирующий орган — Департамент юстиции города Алматы.</p><address data-site-ru="Фактический адрес: Казахстан, Алматы, ул. Тулебаева, 95/1." data-site-en="Office address: 95/1 Tulebayev Street, Almaty, Kazakhstan." data-site-kk="Нақты мекенжайы: Қазақстан, Алматы, Төлебаев көшесі, 95/1." >Фактический адрес: Казахстан, Алматы, ул. Тулебаева, 95/1.</address></div><div class="organisation-network"><a data-site-ru="IFA в Объединённых Арабских Эмиратах" data-site-en="IFA in the United Arab Emirates" data-site-kk="IFA Біріккен Араб Әмірліктерінде" href="https://ifa-org.ae/" target="_blank" rel="noopener">IFA в Объединённых Арабских Эмиратах</a><a data-site-ru="Сервисный агент IDA в ОАЭ" data-site-en="IDA service agent in the UAE" data-site-kk="БАӘ-дегі IDA сервистік агенті" href="https://ida.ae/" target="_blank" rel="noopener">Сервисный агент IDA в ОАЭ</a></div></div><div class="container footer-legal"><span>© <span id="year">2026</span> IFA</span><span data-i18n="footerCountry">Республика Казахстан</span><span data-i18n="footerSince">С 2002 года</span></div>
     </footer>
 
   </body>

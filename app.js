@@ -37,7 +37,7 @@ const translations = {
     heroBriefTitle: "Деятельность IFA направлена на установление глобального сообщества автотуристов, где разнообразие культур и географий служит источником взаимопонимания и обмена опытом.",
     aboutOverline: "About IFA",
     aboutTitle: "О нас",
-    aboutLead: "IFA — общественный фонд/некоммерческая организация, деятельность которой официально согласована и зарегистрирована Министерством юстиции Республики Казахстан в 2002 году. В соответствии с Уставом Федерация осуществляет деятельность в сфере развития автотуризма, а также оформления и выдачи международных водительских удостоверений.",
+    aboutLead: "IFA — общественный фонд «INTERNATIONAL FEDERATION OF AUTOTOURISM», зарегистрированный 21 марта 2002 года Департаментом юстиции города Алматы. Федерация развивает автотуризм и международное сотрудничество. Согласно сертификату IFA № 2012-23779-001, International Drivers Association уполномочена оформлять и выдавать международные водительские удостоверения на территории стран Евразии и региона MENA.",
     aboutCommunityKicker: "Государственно-экспертное взаимодействие",
     aboutCommunityTitle: "Экспертная позиция IFA в развитии автотуризма",
     aboutCommunityText: "IFA взаимодействует с государственными структурами и отраслевыми организациями по вопросам автомобильной мобильности, водительских документов, пограничных процедур, дорожной безопасности и сервисной инфраструктуры. Федерация консолидирует обращения, готовит официальные запросы и предложения и сопровождает вопросы до получения позиции компетентного органа.",
@@ -136,7 +136,7 @@ const translations = {
     historyOneText: "IFA учреждена в Казахстане. Устав определил долгосрочный мандат Федерации в сфере автомобильного туризма.",
     historyTwoTag: "Действующее направление",
     historyTwoTitle: "Сервисная модель с IDA",
-    historyTwoText: "Практическая работа с международными водительскими документами выстраивается через аккредитованного партнёра.",
+    historyTwoText: "Практическая работа с международными водительскими документами выстраивается через сертифицированную IFA организацию.",
     historyThreeTag: "Сервисная преемственность",
     historyThreeTitle: "Документы и поддержка водителей",
     historyThreeText: "Партнёрская инфраструктура поддерживает документальную и информационную работу для международных водителей.",
@@ -178,7 +178,7 @@ const translations = {
     insightRead: "Подробнее →",
     dossierHeroOverline: "Institutional profile / IFA",
     dossierHeroTitle: "Международная Федерация Автотуризма",
-    dossierHeroLead: "IFA — общественный фонд и некоммерческая организация, деятельность которой официально согласована и зарегистрирована Министерством юстиции Республики Казахстан в 2002 году. В соответствии с Уставом Федерация осуществляет деятельность в сфере развития автотуризма, а также оформления и выдачи международных водительских удостоверений.",
+    dossierHeroLead: "IFA — общественный фонд «INTERNATIONAL FEDERATION OF AUTOTOURISM», зарегистрированный 21 марта 2002 года Департаментом юстиции города Алматы. Федерация развивает автотуризм и международное сотрудничество. Согласно сертификату IFA № 2012-23779-001, International Drivers Association уполномочена оформлять и выдавать международные водительские удостоверения на территории стран Евразии и региона MENA.",
     statusConfirmed: "Подтверждённая основа",
     statusActive: "Действующее направление",
     statusParticipation: "Подтверждённое участие",
@@ -195,11 +195,11 @@ const translations = {
     cityAtyrau: "Атырау",
     idaOfficialLink: "Официальный сайт Ассоциации ↗",
     idaDepartmentLink: "Департамент выдачи МВУ ↗",
-    idaPartnerLabel: "Официальный аккредитованный партнёр IFA",
+    idaPartnerLabel: "Сертифицированная IFA организация",
     idaShowcaseOverline: "Official IDP services / Kazakhstan",
     idaShowcaseTitle: "Департамент выдачи МВУ в Казахстане",
     idaShowcaseKicker: "Практическая инфраструктура для международных водителей",
-    idaShowcaseLead: "International Drivers Association — официально аккредитованный партнёр IFA, уполномоченный на оформление и выдачу Международного Водительского Удостоверения в Казахстане — онлайн и через официальные филиалы.",
+    idaShowcaseLead: "International Drivers Association — сертифицированная IFA организация по оформлению и выдаче международных водительских удостоверений. Сертификат № 2012-23779-001 выдан 23 апреля 2012 года и переоформлен 23 октября 2023 года.",
     idaHeadOfficeLabel: "Головной офис · Алматы",
     idaHeadOfficeAddress: "ул. Тулебаева, 95/1, 1 этаж — вход со стороны ул. Толе би",
     idaContactLabel: "Связаться с департаментом",
@@ -217,7 +217,7 @@ const translations = {
     dossierTimelineOneTitle: "Учреждение фонда",
     dossierTimelineOneText: "IFA получает правовую и уставную основу для деятельности в сфере автотуризма.",
     dossierTimelineTwoTitle: "Сервисная модель с IDA",
-    dossierTimelineTwoText: "Практическая работа с международными водительскими документами выстраивается через аккредитованного партнёра.",
+    dossierTimelineTwoText: "Практическая работа с международными водительскими документами выстраивается через сертифицированную IFA организацию.",
     dossierTimelineThreeTitle: "Сервисная преемственность",
     dossierTimelineThreeText: "Поддерживается документальная и информационная работа для водителей через партнёрскую инфраструктуру.",
     dossierTimelineFourTitle: "Публичная программа IFA",
@@ -318,7 +318,7 @@ const translations = {
     heroBriefTitle: "IFA works to build a global community of motor travellers, where the diversity of cultures and geographies becomes a source of mutual understanding and shared experience.",
     aboutOverline: "About IFA",
     aboutTitle: "About us",
-    aboutLead: "IFA is a public foundation/non-profit organisation whose activities were officially approved and registered by the Ministry of Justice of the Republic of Kazakhstan in 2002. In accordance with its Charter, the Federation operates in the development of autotourism and in the processing and issuance of International Driving Permits.",
+    aboutLead: "IFA is the Public Foundation “INTERNATIONAL FEDERATION OF AUTOTOURISM”, registered on 21 March 2002 by the Almaty City Department of Justice. The Federation develops autotourism and international cooperation. Under IFA Certificate No. 2012-23779-001, International Drivers Association is authorised to process and issue International Driving Permits within Eurasian countries and the MENA region.",
     aboutCommunityKicker: "Public-sector and expert engagement",
     aboutCommunityTitle: "IFA expertise in developing autotourism",
     aboutCommunityText: "IFA engages with public authorities and sector organisations on automotive mobility, driver documentation, border procedures, road safety and service infrastructure. The Federation consolidates stakeholder submissions, prepares formal requests and proposals, and follows each matter through to a response from the competent authority.",
@@ -417,7 +417,7 @@ const translations = {
     historyOneText: "IFA was founded in Kazakhstan. Its charter established the Federation's long-term mandate in the field of motor tourism.",
     historyTwoTag: "Active direction",
     historyTwoTitle: "Service model with IDA",
-    historyTwoText: "Practical work with international driver documents is structured through an accredited partner.",
+    historyTwoText: "Practical work with international driver documents is structured through an IFA-certified organisation.",
     historyThreeTag: "Service continuity",
     historyThreeTitle: "Driver documents and support",
     historyThreeText: "Partner infrastructure supports document and information services for international drivers.",
@@ -459,7 +459,7 @@ const translations = {
     insightRead: "Read more →",
     dossierHeroOverline: "Institutional profile / IFA",
     dossierHeroTitle: "International Federation of Autotourism",
-    dossierHeroLead: "IFA is a public foundation and non-profit organisation whose activities were officially approved and registered by the Ministry of Justice of the Republic of Kazakhstan in 2002. In accordance with its Charter, the Federation works to develop autotourism and to process and issue International Driving Permits.",
+    dossierHeroLead: "IFA is the Public Foundation “INTERNATIONAL FEDERATION OF AUTOTOURISM”, registered on 21 March 2002 by the Almaty City Department of Justice. The Federation develops autotourism and international cooperation. Under IFA Certificate No. 2012-23779-001, International Drivers Association is authorised to process and issue International Driving Permits within Eurasian countries and the MENA region.",
     statusConfirmed: "Confirmed foundation",
     statusActive: "Active direction",
     statusParticipation: "Confirmed participation",
@@ -476,11 +476,11 @@ const translations = {
     cityAtyrau: "Atyrau",
     idaOfficialLink: "Association official website ↗",
     idaDepartmentLink: "IDP issuing department ↗",
-    idaPartnerLabel: "IFA official accredited partner",
+    idaPartnerLabel: "IFA-certified organisation",
     idaShowcaseOverline: "Official IDP services / Kazakhstan",
     idaShowcaseTitle: "IDP Issuing Department in Kazakhstan",
     idaShowcaseKicker: "Practical infrastructure for international drivers",
-    idaShowcaseLead: "International Drivers Association is IFA's officially accredited partner, authorised to process and issue International Driving Permits in Kazakhstan — online and through official branches.",
+    idaShowcaseLead: "International Drivers Association is an IFA-certified organisation, authorised to process and issue International Driving Permits in Kazakhstan — online and through official branches.",
     idaHeadOfficeLabel: "Head office · Almaty",
     idaHeadOfficeAddress: "95/1 Tulebayev Street, 1st floor — entrance from Tole Bi Street",
     idaContactLabel: "Contact the department",
@@ -498,7 +498,7 @@ const translations = {
     dossierTimelineOneTitle: "Foundation established",
     dossierTimelineOneText: "IFA receives its legal and charter foundation for work in autotourism.",
     dossierTimelineTwoTitle: "Service model with IDA",
-    dossierTimelineTwoText: "Practical work with international driver documents is structured through an accredited partner.",
+    dossierTimelineTwoText: "Practical work with international driver documents is structured through an IFA-certified organisation.",
     dossierTimelineThreeTitle: "Service continuity",
     dossierTimelineThreeText: "Document and information services for drivers continue through partner infrastructure.",
     dossierTimelineFourTitle: "IFA public programme",
@@ -563,13 +563,17 @@ const translations = {
   },
 };
 
+translations.kk = Object.fromEntries(Object.entries(translations.ru).map(([key, value]) => [
+  key, window.ifaKazakh?.[String(value).replace(/\s+/g, ' ').trim()] || value,
+]));
+
 const header = document.querySelector(".site-header");
 const menuButton = document.querySelector(".menu-button");
 const mainNav = document.querySelector(".main-nav");
 const navBackdrop = document.querySelector(".nav-backdrop");
 const languageButtons = document.querySelectorAll(".lang-button");
 const metaDescription = document.querySelector('meta[name="description"]');
-const mobileMenuMedia = window.matchMedia("(max-width: 1040px)");
+const mobileMenuMedia = window.matchMedia("(max-width: 1360px)");
 
 let currentLanguage = "ru";
 let menuScrollPosition = 0;
@@ -603,6 +607,8 @@ function setLanguage(language) {
     idp: [dictionary.idpPageTitle, dictionary.idpPageDescription],
     journey: [dictionary.journeyPageTitle, dictionary.journeyPageDescription],
     resources: [dictionary.resourcesPageTitle, dictionary.resourcesPageDescription],
+    documents: [currentLanguage === 'en' ? 'Documents & register — IFA Kazakhstan' : 'Документы и реестр — IFA Kazakhstan', currentLanguage === 'en' ? 'Official IFA information and register of certified organisations.' : 'Официальная информация IFA и реестр сертифицированных организаций.'],
+    'certificate-ida': [currentLanguage === 'en' ? 'IDA certificate — IFA Kazakhstan' : 'Сертификат IDA — IFA Kazakhstan', currentLanguage === 'en' ? 'IFA Certificate No. 2012-23779-001 issued to International Drivers Association.' : 'Сертификат IFA № 2012-23779-001, выданный International Drivers Association.'],
     home: [dictionary.pageTitle, dictionary.pageDescription],
   };
   const [pageTitle, pageDescription] = pageMeta[page] || pageMeta.home;

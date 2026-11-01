@@ -6,6 +6,7 @@ const RATE_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT = 5;
 
 const topicLabels = {
+  kk: { route_project: "Маршруттық жоба", industry_partnership: "Салалық әріптестік", international_cooperation: "Халықаралық ынтымақтастық", other: "Басқа" },
   ru: {
     route_project: "Маршрутный проект",
     industry_partnership: "Отраслевое партнёрство",
@@ -71,7 +72,7 @@ function parseBody(request) {
 }
 
 function validate(body) {
-  const language = body.language === "en" ? "en" : "ru";
+  const language = ["ru", "en", "kk"].includes(body.language) ? body.language : "ru";
   const topicKey = clean(body.topicKey, 40);
   const application = {
     name: clean(body.name, 120),

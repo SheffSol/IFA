@@ -158,7 +158,7 @@
         "Обязательный этап подготовки IFA": "Mandatory IFA preparation step",
         "Оформите МВУ до выезда за пределы страны": "Obtain your IDP before travelling abroad",
         "Международное Водительское Удостоверение не заменяет национальные права: в поездке необходимо иметь оба документа. Перед выездом дополнительно проверьте правила страны назначения, транзитных государств и условия прокатной компании.": "An International Driving Permit does not replace a national driving licence: carry both documents throughout the journey. Before departure, also verify the rules of the destination and transit countries and the requirements of the rental company.",
-        "Официальный аккредитованный партнёр IFA": "Official accredited partner of IFA",
+        "Сертифицированная IFA организация": "IFA-certified organisation",
         "Оформление и выдача водительских документов международного образца.": "Processing and issuance of internationally recognised driving documents.",
         "Официальный сайт Ассоциации": "Official Association website",
         "Департамент выдачи МВУ": "IDP Issuing Department",
@@ -270,7 +270,7 @@
   };
 
   const applyLanguage = (language) => {
-    const selected = language === "en" ? "en" : "ru";
+    const selected = ['ru', 'en', 'kk'].includes(language) ? language : 'ru';
 
     textRecords.forEach((record) => {
       record.node.nodeValue = record.value;

@@ -243,7 +243,8 @@ a {
   text-transform: uppercase;
 }
 
-.main-nav > a[data-i18n="navMembership"] { color: var(--champagne); }
+.main-nav > a[data-i18n="navMembership"] { color: var(--white); }
+.main-nav > a[data-i18n="navIdpDepartment"] { color: var(--champagne); font-weight: 800; }
 
 .main-nav > a[aria-current="page"]::after {
   transform: scaleX(1);
@@ -481,7 +482,7 @@ a {
 }
 
 .hero h1 {
-  max-width: 1040px;
+  max-width: 1280px;
   margin: 0;
   font-size: clamp(58px, 7vw, 110px);
   font-weight: 720;
@@ -1458,7 +1459,7 @@ a {
   .network-layout { grid-template-columns: 0.72fr 1.28fr; gap: 5vw; }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1360px) {
   :root { --header-total: 82px; }
   .institution-bar { display: none; }
   .navigation-bar { grid-template-columns: 1fr auto; min-height: 82px; padding: 0 24px; }
