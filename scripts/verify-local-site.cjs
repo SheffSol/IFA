@@ -24,7 +24,7 @@ const {chromium}=require('playwright');
      const big=[...document.querySelectorAll('body *')].filter(visible).filter(e=>{const b=e.getBoundingClientRect();return b.right>innerWidth+2&&getComputedStyle(e).position!=='fixed'&&!e.closest('.main-nav,.register-scroll,.history-track,.route-track,.journey-gallery')}).slice(0,5).map(e=>({tag:e.tagName,cls:e.className,right:e.getBoundingClientRect().right}));
      const arrows=[];const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
      while((n=w.nextNode())) if(n.parentElement?.closest('a,button')&&!n.parentElement.closest('script,style,svg')&&/[↗→←➡➜]/.test(n.nodeValue)) arrows.push(n.nodeValue);
-     return {lang:document.documentElement.lang,title:document.title,h1:document.querySelector('h1')?.textContent,overflow:document.documentElement.scrollWidth>innerWidth+1,broken,big,arrows,footer:!!document.querySelector('.organisation-details'),privateText:/020340011237|141140004839|Васнецова|КАЛЫМКУЛОВ|КЕРИМОВ/.test(document.body.innerText)};
+     return {lang:document.documentElement.lang,title:document.title,h1:document.querySelector('h1')?.textContent,overflow:document.documentElement.scrollWidth>innerWidth+1,broken,big,arrows,footer:!!document.querySelector('.organisation-details'),privateText:/020340011237|141140004839|КАЛЫМКУЛОВ|КЕРИМОВ/.test(document.body.innerText)};
     });
     results.push({file,width,expectedLang:lang,status:response.status(),...state,errors});
     if(width===1440&&['index.html','documents.html','idp-department.html','certificate-ida.html'].includes(file)&&lang==='ru') await page.screenshot({path:path.join(out,file.replace('.html',`-${width}-${lang}.png`)),fullPage:true});

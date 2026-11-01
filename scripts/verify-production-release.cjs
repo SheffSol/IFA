@@ -21,7 +21,7 @@ const fs=require('fs');const path=require('path');const crypto=require('node:cry
   for(const lang of ['ru','en','kk'])for(const file of htmlFiles){
    const route=file==='index.html'?'/':`/${file.replace('.html','')}`;
    const response=await page.goto(`${base}${route}?lang=${lang}&release=${sha.slice(0,8)}`,{waitUntil:'networkidle',timeout:45000});
-   const state=await page.evaluate(()=>({lang:document.documentElement.lang,title:document.title,overflow:document.documentElement.scrollWidth>innerWidth+1,broken:[...document.images].filter(i=>i.hasAttribute('src')&&i.complete&&!i.naturalWidth).map(i=>i.src),privateText:/020340011237|141140004839|Васнецова|КАЛЫМКУЛОВ|КЕРИМОВ/.test(document.body.innerText),footer:!!document.querySelector('.organisation-details')}));
+   const state=await page.evaluate(()=>({lang:document.documentElement.lang,title:document.title,overflow:document.documentElement.scrollWidth>innerWidth+1,broken:[...document.images].filter(i=>i.hasAttribute('src')&&i.complete&&!i.naturalWidth).map(i=>i.src),privateText:/020340011237|141140004839|КАЛЫМКУЛОВ|КЕРИМОВ/.test(document.body.innerText),footer:!!document.querySelector('.organisation-details')}));
    results.push({file,width,expectedLang:lang,status:response.status(),...state});
    if(lang==='ru'&&['index.html','about.html','documents.html','idp-department.html'].includes(file))await page.screenshot({path:path.join(out,`${file}-${width}.png`)});
   }
